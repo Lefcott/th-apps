@@ -1,0 +1,22 @@
+<label ng-if="$ctrl.contentEditorService.isLine == false" class="checkmark__container container" for="border-color-check">
+	<span class="checkbox__label">Border</span>
+	<input class="checkbox" type="checkbox" id="border-color-check" ng-click="$ctrl.toggleBorder()" ng-checked="$ctrl.hasBorder">
+	<span class="checkmark"></span>
+</label>
+
+<div class="property__border" ng-show="$ctrl.hasBorder">
+	<label class="property__label" for="border-color-check">Width</label>
+	<div class="slider" id="width-slider">
+		<div id="width-custom-handle" class="ui-slider-handle slider__handle"></div>
+	</div>
+	<div class="slider__fake">
+		<div id="calendar-opacity-text-border" class="slider__text"></div>
+	</div>
+
+	<label class="property__label" for="border-color-picker">Color</label>
+	<div class='color-picker-select'>
+    <i class="fas fa-chevron-down"></i>
+		<input type='text' id="border-color-picker" />
+	</div>
+
+</div>

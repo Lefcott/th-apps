@@ -1,0 +1,771 @@
+/**
+ * /*
+ * 1. GLOBAL RESETS
+ * 2. MODIFIERS
+ * 3. OTHER
+ * 4. FOCUS / ACTIVE STATE
+ * 5. TYPOGRAPHY
+ * 6. PORTAL / ZOOM
+ * 7. IMAGES
+ * 8. BUTTONS
+ * 9. BOOTSTRAP 3 RELATED
+ * 10. TOOL TIPS / AUTO GEN
+ * 11. CONTENT TOOLS: TOOLBOX
+ * 12. GENERAL LAYOUT (OLD)
+ *
+ * @format
+ */
+
+/* MARKER - DO NOT DELETE OR PLACE CODE ABOVE THIS LINE - CSS GRAB FOR SAVE STARTS HERE*/
+
+/*====================================================
+// GLOBAL // RESETS
+=====================================================*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i");
+
+#__single_spa_angular_1 {
+	box-sizing: content-box;
+}
+
+#content-creator svg {
+	box-sizing: initial !important;
+}
+
+:root {
+	font-size: 16px;
+}
+
+#content-creator {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+html .editor__container,
+body .editor__container {
+	flex: 1;
+	background-color: #f1f1f1;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+	display: none !important;
+}
+
+*:before {
+	box-sizing: content-box;
+}
+
+#content-creator * {
+	box-sizing: border-box;
+}
+
+.theme-bg {
+	background-color: rgba(241, 241, 241, 0.5);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+	height: 100%;
+	padding: 1.25em;
+}
+
+#content-creator a {
+	cursor: pointer;
+}
+
+#content-creator p {
+	height: unset;
+	margin: 0;
+	padding: 0;
+}
+
+#content-creator button:disabled,
+div:disabled {
+	cursor: not-allowed !important;
+}
+
+.widget-obj .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal !important;
+	font-family: "Open Sans", sans-serif !important;
+}
+
+.widget-obj h1.large-font {
+	font-size: 5em !important;
+}
+.widget-obj h1 {
+	font-size: 4.5em !important;
+}
+.widget-obj h2 {
+	font-size: 3em !important;
+}
+.widget-obj h3 {
+	font-size: 2em !important;
+}
+.widget-obj h4 {
+	font-size: 1.5em !important;
+}
+.widget-obj h5 {
+	font-size: 1em !important;
+}
+
+/*====================================================
+// MODIFIERS
+=====================================================*/
+
+.element--floatR {
+	float: right;
+}
+
+.element--floatL {
+	float: left;
+}
+
+/* used by photo component  */
+.no-padding {
+	padding: 0;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.overflowHidden {
+	overflow: hidden;
+	padding: 0 !important;
+}
+
+.eventDay_body .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.eventDay_header {
+	line-height: normal;
+}
+
+/*====================================================
+// Stacked icons
+=====================================================*/
+.stacked-icon__container {
+	display: flex;
+	flex-direction: column;
+}
+.lower {
+	position: absolute;
+	transform: translateY(-100%);
+}
+
+/*====================================================
+// Main Layout
+=====================================================*/
+.editor__main {
+	display: flex;
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+
+.portal__container {
+	width: calc(100% - 200px);
+}
+
+.editor__column {
+	width: 200px;
+}
+
+.reveal {
+	overflow: visible !important;
+}
+.reveal .progress {
+	display: none;
+}
+/*====================================================
+// placeholder
+=====================================================*/
+.placeholder__icon {
+	font-size: 8em;
+	color: rgba(250, 250, 250, 0.8);
+}
+
+.placeholder__container {
+	background-color: #9a9a9a;
+	overflow: hidden;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/*====================================================
+// OTHER
+=====================================================*/
+
+/* For theme text color */
+
+.theme-text {
+	color: inherit;
+}
+
+/* zoom / orientation in editor */
+
+.tool-style {
+	background: #e9e9e9;
+	border: 1px solid #ccc;
+}
+/*====================================================
+// FOCUS / ACTIVE STATE
+=====================================================*/
+
+.editorBtn.btn:focus {
+	background: #e5e5e5;
+	box-shadow: none;
+}
+
+:focus {
+	outline-color: inherit;
+	outline-style: none;
+	outline-width: 0;
+}
+
+.ce-element.ce-element--type-text.ce-element--focused:focus {
+	background: inherit;
+	box-shadow: none;
+}
+
+.ce-element--empty.ce-element.ce-element--type-text.ce-element--focused:focus {
+	background: inherit;
+	box-shadow: none;
+}
+.btn {
+	font-size: 1rem;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	background: #d1d1d1;
+	box-shadow: inset 0 1px 3px #b0b0b0;
+	outline-offset: 0;
+	outline-color: inherit;
+	outline-style: none;
+	outline-width: 0;
+}
+
+.btn.active,
+.btn:active {
+	background: #d1d1d1;
+	box-shadow: inset 0 1px 3px #b0b0b0;
+}
+
+/*====================================================
+// TYPOGRAPHY
+=====================================================*/
+
+#content-creator h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: #333333;
+}
+
+#content-creator h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: normal;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+}
+
+.theme-bg h1,
+.theme-bg h2,
+.theme-bg h3,
+.theme-bg h4,
+.theme-bg h5,
+.theme-bg h6 {
+	padding: 0 0 0.5em 0;
+}
+
+/* PORTAL ONLY */
+/* Setting default font sizes */
+
+.portal-container {
+	overflow: auto;
+}
+
+.portal-container p {
+	font-size: 18px;
+	margin: 0 0 1.25em 0 !important;
+	/* overwrite bootstrap p margin */
+}
+
+.portal-container h1 {
+	font-size: 48px;
+}
+.portal-container h2 {
+	font-size: 34px;
+}
+.portal-container h3 {
+	font-size: 28px;
+}
+.portal-container h4 {
+	font-size: 22px;
+}
+.portal-container h5 {
+	font-size: 16px;
+}
+.portal-container h6 {
+	font-size: 14px;
+}
+
+.btn-warning {
+	background-color: #d35039;
+	border-radius: 1px;
+}
+.btn-warning:hover {
+	background-color: #d35039;
+}
+
+.modal-content {
+	border-radius: 1px;
+}
+/*====================================================
+// PORTAL // ZOOM
+=====================================================*/
+
+#portal-wrapper {
+	height: 100%;
+	overflow: auto;
+	padding-bottom: 4rem;
+}
+.template-container {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: 1% 2% 1% 2%;
+}
+
+.template-container-column {
+	height: 100%;
+}
+/* editor__container is targeted by many other css selectors. Do Not Remove */
+.editor__container {
+	height: 100%;
+}
+/*====================================================
+// IMAGES --> GLOBAL
+=====================================================*/
+
+/* For images that require 100% coverage of parent elem */
+
+/* PORTAL ONLY */
+
+.imageCover div[class*="ce-element--type-image"] {
+	min-height: 100%;
+	min-width: 100%;
+	/* We need to override CT Inline styles of width & height */
+	height: 100% !important;
+	width: 100% !important;
+}
+
+/* RENDERED ONLY */
+
+.imageCover img[class*="ce-element--type-image"] {
+	object-fit: cover;
+	object-position: 0 0;
+}
+/* images in portal need margin */
+
+.ce-element--type-image.align-left,
+.ce-element--type-image.align-right,
+img.align-left.ce-element.ce-element--type-image,
+img.align-right.ce-element.ce-element--type-image {
+	margin: 1em;
+}
+/*====================================================
+// BUTTONS
+=====================================================*/
+
+button {
+	text-transform: capitalize;
+}
+/* Action btns in editor, save, add slide etc */
+/* block */
+.editorBtn {
+	background-color: #e5e5e5;
+	border: 1px solid #b6b7b7;
+	border-radius: 1px;
+	color: #333333;
+	font: 400 16px/20px "Open Sans", "Helvetica Neue", helvetica, arial, verdana,
+		sans-serif;
+	height: 32px;
+	margin: 0 5px;
+	min-width: 138px;
+	padding: 6px 12px;
+	position: relative;
+}
+
+.editorBtn:hover {
+	background-color: #e7e7e7;
+}
+
+.editorBtn--teal {
+	background-color: #3fa4ab;
+	border-color: inherit;
+	color: #f0f0f0;
+}
+.editorBtn--floatR {
+	float: right;
+}
+
+.modal-footer .btn {
+	background-color: #3fa4ab;
+}
+.modal-footer .btn:hover {
+	background: #6dbcc2;
+	color: white;
+}
+button.editorBtn.btn.editorBtn--teal:focus,
+button.editorBtn.btn.editorBtn--teal:hover {
+	background-color: #00a9b2;
+	color: #f0f0f0;
+}
+
+/*====================================================
+// BOOT STRAP 3 --> overwrites etc.
+=====================================================*/
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-gutters > .col {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.no-gutters [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.no-gutter {
+	height: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.themeimage-fix {
+	height: 100%;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.navbar {
+	border: none !important;
+}
+
+/*====================================================
+// TOOL TIPS & AUTO GEN CLASSES
+=====================================================*/
+
+span[tool-tip],
+button[tool-tip],
+div.single-photo[tool-tip] {
+	position: relative;
+}
+
+span[tool-tip]:after,
+button[tool-tip]:after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 1px;
+	color: #fff;
+	content: attr(tool-tip);
+	font-size: 0.7rem;
+	left: -12px;
+	line-height: 1.2rem;
+	min-width: 85px;
+	opacity: 0;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	top: -25px;
+	transition: opacity 0.5s ease-in;
+	word-break: break-word;
+	z-index: 10;
+}
+
+.btn-undo-redo[tool-tip]:after {
+	left: -0.1rem;
+}
+
+div.auto-generate-area[tool-tip]:before {
+	background: rgba(181, 52, 41, 0.9);
+	border: 2px solid #fff;
+	color: #fff;
+	content: attr(tool-tip) !important;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.2rem;
+	padding: 10px 6px;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	top: 0;
+	transition: opacity 0.5s ease-in;
+	word-break: break-word;
+	z-index: 21;
+}
+
+div.single-photo[tool-tip]:before {
+	background: rgba(255, 212, 97, 0.8);
+	color: #333333;
+	content: attr(tool-tip) !important;
+	border: 2px solid #333333;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.2rem;
+	min-width: 100px;
+	margin: auto;
+	opacity: 0;
+	padding: 5px 7px;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	top: 0;
+	transition: opacity 0.5s ease-in;
+	word-break: break-word;
+	z-index: 10;
+}
+
+span[tool-tip]:hover:after,
+button[tool-tip]:hover:after,
+div.single-photo[tool-tip]:hover:before {
+	opacity: 1;
+}
+
+/* for auto gen photo area*/
+.portal-container .alwaysShow div.single-photo[tool-tip]:before {
+	opacity: 1;
+	padding: 10px 6px;
+}
+.auto-generate-area:after {
+	background: rgba(181, 52, 41, 0.2);
+	box-shadow: 0px 0px 70px #b53429 inset;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+/*====================================================
+// CONTENT TOOLS --> TOOLBOX
+=====================================================*/
+
+.editor__column {
+	display: flex;
+	height: 100%;
+}
+
+.editor__scroll {
+	display: flex;
+	flex: 1;
+}
+
+.editor__wrapper {
+	flex: 1;
+	background: #e6e6e6;
+	font-size: 16px;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	top: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+	position: absolute;
+}
+
+.editor__zoom-title {
+	font-size: 16px;
+	margin-left: 5%;
+	margin-right: 1%;
+}
+
+.editor__zoom-title span {
+	float: right;
+	padding-right: 7px;
+}
+
+.editor__toolbox-title {
+	margin-left: 5%;
+}
+/*====================================================
+// GENERAL LAYOUT --> TEMPLATES (original)
+=====================================================*/
+/* MAIN LAYOUT CLASSES */
+
+.fill {
+	height: 100%;
+	min-height: 100%;
+}
+
+.half-fill {
+	height: 50%;
+	min-height: 50%;
+}
+
+/* Main Layout Sections */
+
+.main-header {
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 20%;
+}
+
+.main-body {
+	height: 65%;
+}
+
+.main-footer {
+	height: 15%;
+}
+
+.main-footer-box {
+	height: 100%;
+	padding-bottom: 15px;
+}
+
+.no-header-footer {
+	/* if no header or footer ** only apply to main-body */
+	height: 100%;
+	padding: 15px 0;
+}
+
+.no-footer {
+	/* if no footer */
+	height: 80%;
+	padding-bottom: 15px;
+}
+
+.no-title {
+	padding-top: 15px;
+}
+
+.print-portrait .no-footer {
+	height: 85%;
+}
+
+.digital-portrait .no-footer {
+	height: 90%;
+}
+
+.print-portrait .no-footer {
+	height: 85%;
+}
+
+.digital-portrait .no-footer {
+	height: 90%;
+}
+
+.loaderSpinner {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.widget-info-container {
+	height: 100%;
+}
+
+.mt-1 {
+	margin-top: 0.5rem;
+}
+
+.mt-3 {
+	margin-top: 1.5rem;
+}
+
+.cc-dropdown-toggle {
+	display: flex !important;
+}
+
+.cc-dropdown-toggle-text {
+	flex: 1;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.cc-dropdown-menu {
+	width: 100%;
+	max-height: 200px;
+	overflow: auto;
+}
+
+.cc-dropdown-menu-item > a {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 12px !important;
+}
+
+.cc-caption {
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.cc-menu-widget-placeholder {
+	font-size: 400%;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,219 @@
+name: Deployment
+
+run-name: Deploy ${{ inputs.package }} to ${{ inputs.environment }} by @${{ github.actor }}
+
+on:
+  push:
+    branches: [feature/github-actions-trigger]
+  pull_request:
+    branches: [$default-branch, feature/github-actions-trigger]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Target enviroment for app deployment"
+        required: true
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - staging
+          - production
+      package:
+        description: "Teamhub app for deployment"
+        required: true
+        default: "app-content"
+        type: choice
+        options:
+          - app-content
+          - content-library
+          - content-creator
+          - data-export
+          - digital-signage
+          - dashboard-portal
+          - event-management
+          - insights
+          - resident-check-in-ui
+          - resident-directory
+          - device-alerts
+          - teamhub-settings
+          - staff-directory
+          - dining
+          - teamhub-forms
+          - teamhub-support-center
+          - teamhub-parcels
+          - teamhub-coming-soon
+          - teamhub-integrations
+          - teamhub-auth
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write
+  contents: read
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  FONT_AWESOME_NPM_TOKEN: ${{secrets.FONT_AWESOME_NPM_TOKEN}}
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Variables
+        id: setvars
+        run: |
+          GIT_BRANCH=${GITHUB_BASE_REF:-${GITHUB_REF#refs/heads/}}
+          SELECTED_ENV=$(echo 'console.log("${{ github.event.inputs.environment }}".toUpperCase())' | node -)
+          if [[ "$GIT_BRANCH" == "feature/github-actions-trigger" ]]; then
+            echo "::set-output name=K4_ENV::DEV"
+          else
+            echo "::set-output name=K4_ENV::"$SELECTED_ENV""
+          fi
+
+    outputs:
+      K4_ENV: ${{ steps.setvars.outputs.K4_ENV }}
+      CLOUDFRONT_DISTRIBUTION_ID: CLOUDFRONT_DISTRIBUTION_ID_${{ steps.setvars.outputs.K4_ENV }}
+      TEAMHUB_DEPLOY_AWS_ROLE: TEAMHUB_DEPLOY_AWS_ROLE_${{ steps.setvars.outputs.K4_ENV }}
+
+  queue_packages:
+    runs-on: ubuntu-latest
+    needs: init
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets[needs.init.outputs.TEAMHUB_DEPLOY_AWS_ROLE] }}
+          aws-region: us-east-1
+
+      - name: Get Changed Directories
+        id: changed-files
+        uses: tj-actions/changed-files@v23
+        with:
+          dir_names: "true"
+
+      - name: Queue Packages
+        id: queue_packages
+        run: |
+          # PACKAGES=()
+          PACKAGES=( $( ls ./packages ) )
+
+          SELECTED_PACKAGE=$(echo 'console.log("${{ github.event.inputs.package }}")' | node -)
+
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ $file =~ .*packages/.* ]]; then
+              PACKAGE_NAME=`echo $file | sed 's|^packages/\([^/]*\).*$|\1|'`
+              if ! [[ $PACKAGES[*] =~ $PACKAGE_NAME ]]; then
+              PACKAGES+=("$PACKAGE_NAME")
+              fi
+            fi
+          done
+
+
+          MATRIX=()    
+
+          if [[ -n "$SELECTED_PACKAGE" ]]; then
+            echo "GOT_HERE"
+            echo $SELECTED_PACKAGE
+            MATRIX+=("{\"name\":\"$SELECTED_PACKAGE\"}")
+          else
+            for package in ${PACKAGES[@]}; do
+            echo $package
+            MATRIX+=("{\"name\":\"$package\"}")
+            done
+          fi
+
+          SERIALIZED_MATRIX="$(IFS=,; echo "${MATRIX[*]}")"
+          echo "::set-output name=packages::{\"include\":[$SERIALIZED_MATRIX]}"
+
+      - name: test outputs
+        run: echo ${{ steps.queue_packages.outputs.packages }}
+
+      - name: Notify slack channel
+        id: slack
+        uses: slackapi/slack-github-action@v1.19.0
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        with:
+          channel-id: C02DTSHNZ5G
+          slack-message: "Deploy the following packages to teamhub-apps - ${{needs.init.outputs.K4_ENV}}"
+
+    outputs:
+      packages: ${{ steps.queue_packages.outputs.packages }}
+
+  build_packages:
+    if: ${{ needs.queue_packages.outputs.packages }}
+    permissions:
+      id-token: write
+      contents: read
+    needs: [init, queue_packages]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.queue_packages.outputs.packages) }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets[needs.init.outputs.TEAMHUB_DEPLOY_AWS_ROLE] }}
+          aws-region: us-east-1
+
+      - name: Configure NPM
+        run: |
+          npm config set "//registry.npmjs.org/:_authToken" ${{ secrets.NPM_TOKEN }}
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONT_AWESOME_NPM_TOKEN }}
+
+      - name: Build Package
+        working-directory: packages/${{matrix.name}}
+        run: |
+          ENV=${{ needs.init.outputs.K4_ENV }}
+          echo "K4_ENV=${ENV,,}" >> .env
+          echo "Building ${{matrix.name}}"
+          npm install lerna@4.0.0 --save
+          npx lerna bootstrap --scope=${{matrix.name}} -- --production=false --legacy-peer-deps
+          npx lerna run build --scope=${{matrix.name}}
+
+      - name: Publish to S3
+        working-directory: packages/${{matrix.name}}
+        run: |
+          ENV=${{ needs.init.outputs.K4_ENV }}
+
+          BUCKET_NAME=s3://apps-${ENV,,}.k4connect.com/teamhub/${{matrix.name}}/$GITHUB_SHA
+          if [[ "$ENV" == "PRODUCTION" ]]; then
+            BUCKET_NAME=s3://apps.k4connect.com/teamhub/${{matrix.name}}/$GITHUB_SHA
+          fi
+
+          echo $BUCKET_NAME
+          aws s3 sync ./dist $BUCKET_NAME
+
+      - name: Update Imports Map
+        run: |
+          chmod +x ./scripts/updateImportmaps.sh
+          ./scripts/updateImportmaps.sh $GITHUB_SHA ${{matrix.name}} ${{ needs.init.outputs.K4_ENV }} ${{ secrets.IMPORTMAP_DEPLOYER_TOKEN }} ${{matrix.name}}
+
+          PACKAGE_NAME=$(echo 'console.log("${{ matrix.name }}")' | node -)
+
+          if [[ "$PACKAGE_NAME" == "teamhub-auth" ]]; then
+            ./scripts/updateImportmaps.sh $GITHUB_SHA  login ${{ needs.init.outputs.K4_ENV }} ${{ secrets.IMPORTMAP_DEPLOYER_TOKEN }} teamhub-auth
+          fi
+
+  invalidate_cloudfront:
+    needs: [init, build_packages]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets[needs.init.outputs.TEAMHUB_DEPLOY_AWS_ROLE] }}
+          aws-region: us-east-1
+
+      - name: Invalidate Cloudfront
+        run: |
+          echo ${{ needs.init.outputs.CLOUDFRONT_DISTRIBUTION_ID }}
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets[needs.init.outputs.CLOUDFRONT_DISTRIBUTION_ID] }}  \
+            --paths "/teamhub-root-config.js", "/teamhub-root-config.js.map", "/index.html"

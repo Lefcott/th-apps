@@ -1,0 +1,18 @@
+<!-- @format -->
+
+<div class="mt-3">
+	<label
+		ng-repeat="meal in $ctrl.menu.menuGroups"
+		class="checkmark__container container"
+	>
+		<span class="checkbox__label menu-meal-label">{{ meal.name }}</span>
+		<input
+			ng-click="$ctrl.onToggle(meal)"
+			class="checkbox"
+			type="checkbox"
+			ng-checked="$ctrl.isToggled(meal)"
+			ng-disabled="$ctrl.isDisabled(meal)"
+		/>
+		<span class="checkmark"></span>
+	</label>
+</div>

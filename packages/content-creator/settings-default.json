@@ -1,0 +1,739 @@
+{
+	"themes": {
+		"digital": {
+			"landscape": [{
+				"name": "Backgrounds",
+				"type": "backgrounds",
+				"layouts": [{
+					"guid": "68ea4b87-56b1-4e1d-b8c0-820e16a370a4",
+					"name": "Background 1",
+					"url": "assets/common-templates/68ea4b87-56b1-4e1d-b8c0-820e16a370a4.html#/0",
+					"image": "assets/layouts/thumbs/68ea4b87-56b1-4e1d-b8c0-820e16a370a4-0.png"
+				}, {
+					"guid": "307f741d-9bdf-429c-8043-609659e3ffec",
+					"name": "Background 2",
+					"url": "assets/common-templates/307f741d-9bdf-429c-8043-609659e3ffec.html#/0",
+					"image": "assets/layouts/thumbs/307f741d-9bdf-429c-8043-609659e3ffec-0.png"
+				}, {
+					"guid": "3f0015ac-b0ad-4f42-9c2f-cf31a2b34372",
+					"name": "Background 3",
+					"url": "assets/common-templates/3f0015ac-b0ad-4f42-9c2f-cf31a2b34372.html#/0",
+					"image": "assets/layouts/thumbs/3f0015ac-b0ad-4f42-9c2f-cf31a2b34372-0.png"
+				}, {
+					"guid": "79c77508-0ded-4f8a-887b-00628dfcb5da",
+					"name": "Background 4",
+					"url": "assets/common-templates/79c77508-0ded-4f8a-887b-00628dfcb5da.html#/0",
+					"image": "assets/layouts/thumbs/79c77508-0ded-4f8a-887b-00628dfcb5da-0.png"
+				}, {
+					"guid": "49ab3d10-f6fd-4bbe-ab1c-65d6ba5f8ba0",
+					"name": "Background 5",
+					"url": "assets/common-templates/49ab3d10-f6fd-4bbe-ab1c-65d6ba5f8ba0.html#/0",
+					"image": "assets/layouts/thumbs/49ab3d10-f6fd-4bbe-ab1c-65d6ba5f8ba0-0.png"
+				}, {
+					"guid": "601f7ea6-2520-4c15-aa63-42c212a0a734",
+					"name": "Background 6",
+					"url": "assets/common-templates/601f7ea6-2520-4c15-aa63-42c212a0a734.html#/0",
+					"image": "assets/layouts/thumbs/601f7ea6-2520-4c15-aa63-42c212a0a734-0.png"
+				}, {
+					"guid": "e42b8b02-51b7-49ed-bd3c-13cea656c98b",
+					"name": "Background 7",
+					"url": "assets/common-templates/e42b8b02-51b7-49ed-bd3c-13cea656c98b.html#/0",
+					"image": "assets/layouts/thumbs/e42b8b02-51b7-49ed-bd3c-13cea656c98b-0.png"
+				}, {
+					"guid": "78e115bf-456f-4cfc-a5f3-b7a9d208d51a",
+					"name": "Background 8",
+					"url": "assets/common-templates/78e115bf-456f-4cfc-a5f3-b7a9d208d51a.html#/0",
+					"image": "assets/layouts/thumbs/78e115bf-456f-4cfc-a5f3-b7a9d208d51a-0.png"
+				}, {
+					"guid": "4a5bf542-2e0d-4abc-900b-7973144115ef",
+					"name": "Background 9",
+					"url": "assets/common-templates/4a5bf542-2e0d-4abc-900b-7973144115ef.html#/0",
+					"image": "assets/layouts/thumbs/4a5bf542-2e0d-4abc-900b-7973144115ef-0.png"
+				}, {
+					"guid": "96923cba-d31f-4c34-9e13-14414b2b2b39",
+					"name": "Background 10",
+					"url": "assets/common-templates/96923cba-d31f-4c34-9e13-14414b2b2b39.html#/0",
+					"image": "assets/layouts/thumbs/96923cba-d31f-4c34-9e13-14414b2b2b39-0.png"
+				}]
+			}, {
+				"name": "Birthdays",
+				"type": "birthday",
+				"layouts": [{
+					"guid": "a4962c07-efc8-424e-bc91-90e0b3daf9c6",
+					"name": "Birthday 1",
+					"url": "assets/common-templates/a4962c07-efc8-424e-bc91-90e0b3daf9c6.html#/0",
+					"image": "assets/layouts/thumbs/monthly-birthdays.png"
+				}, {
+					"guid": "4f19c0bb-2ec0-4984-a398-4111450769da",
+					"name": "Birthday 2",
+					"url": "assets/common-templates/4f19c0bb-2ec0-4984-a398-4111450769da.html#/0",
+					"image": "assets/layouts/thumbs/monthly-birthdays-2.png"
+				}]
+			}, {
+				"name": "Events",
+				"type": "event",
+				"layouts": [{
+					"guid": "951bdb02-8567-43ab-9482-fcd8f1f9332f",
+					"name": "Crafts 1",
+					"url": "assets/common-templates/951bdb02-8567-43ab-9482-fcd8f1f9332f.html#/0",
+					"image": "assets/layouts/thumbs/arts-crafts.png"
+				}, {
+					"guid": "f53b4c8c-a646-45c3-9515-21219fe4b8eb",
+					"name": "Crafts 2",
+					"url": "assets/common-templates/f53b4c8c-a646-45c3-9515-21219fe4b8eb.html#/0",
+					"image": "assets/layouts/thumbs/arts-crafts-2.jpg"
+				}, {
+					"guid": "70e13d16-b6c8-497a-a174-7a0b704a5c1d",
+					"name": "Events Daily",
+					"url": "assets/common-templates/70e13d16-b6c8-497a-a174-7a0b704a5c1d.html#/0",
+					"image": "assets/layouts/thumbs/70e13d16-b6c8-497a-a174-7a0b704a5c1d-0.png"
+				}, {
+					"guid": "bb0e4c0d-60a4-4e7d-8490-3a83d7fd2074",
+					"name": "Events Weekly",
+					"url": "assets/common-templates/bb0e4c0d-60a4-4e7d-8490-3a83d7fd2074.html#/0",
+					"image": "assets/layouts/thumbs/bb0e4c0d-60a4-4e7d-8490-3a83d7fd2074-0.png"
+				},{
+					"guid": "af1d822f-ebad-4d3c-a105-700aad37dc9e",
+					"name": "Exercise 1",
+					"url": "assets/common-templates/af1d822f-ebad-4d3c-a105-700aad37dc9e.html#/0",
+					"image": "assets/layouts/thumbs/exercise.png"
+				}, {
+					"guid": "d5171cff-cb13-4e76-a8de-7ede82bb6286",
+					"name": "Exercise 2",
+					"url": "assets/common-templates/d5171cff-cb13-4e76-a8de-7ede82bb6286.html#/0",
+					"image": "assets/layouts/thumbs/exercise-2.png"
+				}, {
+					"guid": "078c33ab-0f11-4327-9639-52705d8529fc",
+					"name": "Games 1",
+					"url": "assets/common-templates/078c33ab-0f11-4327-9639-52705d8529fc.html#/0",
+					"image": "assets/layouts/thumbs/game-cards.png"
+				}, {
+					"guid": "815d9220-7a9b-4d7a-bebc-48c9b0f32464",
+					"name": "Games 2",
+					"url": "assets/common-templates/815d9220-7a9b-4d7a-bebc-48c9b0f32464.html#/0",
+					"image": "assets/layouts/thumbs/game-cards-2.png"
+				}, {
+					"guid": "bb5a34e0-5971-4e5b-ae1b-0297b665c49f",
+					"name": "Lecture",
+					"url": "assets/common-templates/bb5a34e0-5971-4e5b-ae1b-0297b665c49f.html#/0",
+					"image": "assets/layouts/thumbs/lecture-series.png"
+				}, {
+					"guid": "c6cdf049-ddd9-41b5-bdff-81960a64941b",
+					"name": "Meeting",
+					"url": "assets/common-templates/c6cdf049-ddd9-41b5-bdff-81960a64941b.html#/0",
+					"image": "assets/layouts/thumbs/resident-meeting.png"
+				}, {
+					"guid": "7fcdb21a-99b7-4d20-a655-3fec54a3a55f",
+					"name": "Movies",
+					"url": "assets/common-templates/7fcdb21a-99b7-4d20-a655-3fec54a3a55f.html#/0",
+					"image": "assets/layouts/thumbs/movies-theatre.png"
+				}, {
+					"guid": "d3363229-d552-4a21-bcd0-9f4ab649db31",
+					"name": "Music 1",
+					"url": "assets/common-templates/d3363229-d552-4a21-bcd0-9f4ab649db31.html#/0",
+					"image": "assets/layouts/thumbs/music-event.png"
+				}, {
+					"guid": "e11ab524-841f-4ac8-a1ff-b7e268479d9e",
+					"name": "Music 2",
+					"url": "assets/common-templates/e11ab524-841f-4ac8-a1ff-b7e268479d9e.html#/0",
+					"image": "assets/layouts/thumbs/music-event-2.png"
+				}]
+			}, {
+				"name": "Menus",
+				"type": "menu",
+				"layouts": [{
+					"guid": "bb878cae-76d1-420b-9649-bd6ab60ffc3a",
+					"name": "Daily",
+					"url": "assets/common-templates/bb878cae-76d1-420b-9649-bd6ab60ffc3a.html#/0",
+					"image": "assets/layouts/thumbs/bb878cae-76d1-420b-9649-bd6ab60ffc3a-0.png"
+				}, {
+					"guid": "0485c504-812f-45dd-94a1-0254cfa63cc2",
+					"name": "Specials",
+					"url": "assets/common-templates/0485c504-812f-45dd-94a1-0254cfa63cc2.html#/0",
+					"image": "assets/layouts/thumbs/0485c504-812f-45dd-94a1-0254cfa63cc2-0.png"
+				}]
+			}, {
+				"name": "Outings",
+				"type": "outing",
+				"layouts": [{
+					"guid": "0fe43d18-9d8c-4827-92c5-85874c77d7af",
+					"name": "Food",
+					"url": "assets/common-templates/0fe43d18-9d8c-4827-92c5-85874c77d7af.html#/0",
+					"image": "assets/layouts/thumbs/food-outing.png"
+				}, {
+					"guid": "709ab8aa-f495-4d2e-a5ac-2d910126f310",
+					"name": "Shopping",
+					"url": "assets/common-templates/709ab8aa-f495-4d2e-a5ac-2d910126f310.html#/0",
+					"image": "assets/layouts/thumbs/grocery-shopping.png"
+				}, {
+					"guid": "2c592454-5f91-40ca-a182-1621a29e8067",
+					"name": "Tour",
+					"url": "assets/common-templates/2c592454-5f91-40ca-a182-1621a29e8067.html#/0",
+					"image": "assets/layouts/thumbs/bus-trip-tour.png"
+				}]
+			}, {
+				"name": "Photos",
+				"type": "photo",
+				"layouts": [{
+					"guid": "",
+					"name": "Photo collage",
+					"url": "assets/common-templates/481d4100-d23e-4302-b327-71582142aa38.html#/0",
+					"image": "assets/layouts/thumbs/photo-collage.png"
+				}]
+			}, {
+				"name": "Weather",
+				"type": "weather",
+				"layouts": [{
+					"guid": "b579e6b9-bcde-499c-8931-5d84a99c3ba6",
+					"name": "Weather",
+					"url": "assets/common-templates/b579e6b9-bcde-499c-8931-5d84a99c3ba6.html#/0",
+					"image": "assets/layouts/thumbs/b579e6b9-bcde-499c-8931-5d84a99c3ba6-0.png"
+				}]
+			}],
+
+			"portrait": [{
+				"name": "Backgrounds",
+				"type": "backgrounds",
+				"layouts": [{
+					"guid": "3b8c726e-881a-4ded-a609-481902a7e2a3",
+					"name": "Background 1",
+					"url": "assets/common-templates/3b8c726e-881a-4ded-a609-481902a7e2a3.html#/0",
+					"image": "assets/layouts/thumbs/3b8c726e-881a-4ded-a609-481902a7e2a3-0.png"
+				}, {
+					"guid": "5007ebcf-2089-47c9-8493-975554bc5503",
+					"name": "Background 2",
+					"url": "assets/common-templates/5007ebcf-2089-47c9-8493-975554bc5503.html#/0",
+					"image": "assets/layouts/thumbs/5007ebcf-2089-47c9-8493-975554bc5503-0.png"
+				}, {
+					"guid": "1ad99302-06f3-41b0-ad0f-ad8a8718453d",
+					"name": "Background 3",
+					"url": "assets/common-templates/1ad99302-06f3-41b0-ad0f-ad8a8718453d.html#/0",
+					"image": "assets/layouts/thumbs/1ad99302-06f3-41b0-ad0f-ad8a8718453d-0.png"
+				}, {
+					"guid": "df5a04a2-998e-489b-9aa0-4c1613275b0f",
+					"name": "Background 4",
+					"url": "assets/common-templates/df5a04a2-998e-489b-9aa0-4c1613275b0f.html#/0",
+					"image": "assets/layouts/thumbs/df5a04a2-998e-489b-9aa0-4c1613275b0f-0.png"
+				}, {
+					"guid": "5bb75f75-5832-48b7-82cd-46c682b2d371",
+					"name": "Background 5",
+					"url": "assets/common-templates/5bb75f75-5832-48b7-82cd-46c682b2d371.html#/0",
+					"image": "assets/layouts/thumbs/5bb75f75-5832-48b7-82cd-46c682b2d371-0.png"
+				}, {
+					"guid": "3e6f1567-eae6-4e7d-ac4a-2a5b971baaa9",
+					"name": "Background 6",
+					"url": "assets/common-templates/3e6f1567-eae6-4e7d-ac4a-2a5b971baaa9.html#/0",
+					"image": "assets/layouts/thumbs/3e6f1567-eae6-4e7d-ac4a-2a5b971baaa9-0.png"
+				}, {
+					"guid": "c305d928-93da-4856-8035-0b723b395ceb",
+					"name": "Background 7",
+					"url": "assets/common-templates/c305d928-93da-4856-8035-0b723b395ceb.html#/0",
+					"image": "assets/layouts/thumbs/c305d928-93da-4856-8035-0b723b395ceb-0.png"
+				}, {
+					"guid": "e51ed5e0-d357-45ea-b1fb-4b0e62e08a93",
+					"name": "Background 8",
+					"url": "assets/common-templates/e51ed5e0-d357-45ea-b1fb-4b0e62e08a93.html#/0",
+					"image": "assets/layouts/thumbs/e51ed5e0-d357-45ea-b1fb-4b0e62e08a93-0.png"
+				}, {
+					"guid": "bb735b96-a483-4af0-aca0-c212122ec8f6",
+					"name": "Background 9",
+					"url": "assets/common-templates/bb735b96-a483-4af0-aca0-c212122ec8f6.html#/0",
+					"image": "assets/layouts/thumbs/bb735b96-a483-4af0-aca0-c212122ec8f6-0.png"
+				}, {
+					"guid": "60925b82-f3a7-48f8-973f-c9c79d2847ba",
+					"name": "Background 10",
+					"url": "assets/common-templates/60925b82-f3a7-48f8-973f-c9c79d2847ba.html#/0",
+					"image": "assets/layouts/thumbs/60925b82-f3a7-48f8-973f-c9c79d2847ba-0.png"
+				}]
+			}, {
+				"name": "Birthdays",
+				"type": "birthday",
+				"layouts": [{
+					"guid": "a85fd304-dceb-42c8-88c2-3577fa9b9d18",
+					"name": "Birthday 1",
+					"url": "assets/common-templates/a85fd304-dceb-42c8-88c2-3577fa9b9d18.html#/0",
+					"image": "assets/layouts/thumbs/a85fd304-dceb-42c8-88c2-3577fa9b9d18-0.png"
+				}, {
+					"guid": "4c3d13f0-30ee-4bbd-82e4-335e7f0e78eb",
+					"name": "Birthday 2",
+					"url": "assets/common-templates/4c3d13f0-30ee-4bbd-82e4-335e7f0e78eb.html#/0",
+					"image": "assets/layouts/thumbs/4c3d13f0-30ee-4bbd-82e4-335e7f0e78eb-0.png"
+				}]
+			}, {
+				"name": "Events",
+				"type": "event",
+				"layouts": [{
+					"guid": "3e5d568a-be68-47a9-b1ae-ed9b0be68e41",
+					"name": "Crafts 1",
+					"url": "assets/common-templates/3e5d568a-be68-47a9-b1ae-ed9b0be68e41.html#/0",
+					"image": "assets/layouts/thumbs/3e5d568a-be68-47a9-b1ae-ed9b0be68e41-0.png"
+				}, {
+					"guid": "7df2a367-ede5-47df-8006-5359bc7edd75",
+					"name": "Crafts 2",
+					"url": "assets/common-templates/7df2a367-ede5-47df-8006-5359bc7edd75.html#/0",
+					"image": "assets/layouts/thumbs/7df2a367-ede5-47df-8006-5359bc7edd75-0.png"
+				}, {
+					"guid": "d86c8306-a22c-4876-8a7b-0edcfba9c4c4",
+					"name": "Events Daily",
+					"url": "assets/common-templates/d86c8306-a22c-4876-8a7b-0edcfba9c4c4.html#/0",
+					"image": "assets/layouts/thumbs/d86c8306-a22c-4876-8a7b-0edcfba9c4c4-0.png"
+				}, {
+					"guid": "6c77e292-d9f6-41e1-9439-0371e8448f48",
+					"name": "Exercise 1",
+					"url": "assets/common-templates/6c77e292-d9f6-41e1-9439-0371e8448f48.html#/0",
+					"image": "assets/layouts/thumbs/6c77e292-d9f6-41e1-9439-0371e8448f48-0.png"
+				}, {
+					"guid": "5db96c8c-8b34-4743-b834-73765d344c5a",
+					"name": "Exercise 2",
+					"url": "assets/common-templates/5db96c8c-8b34-4743-b834-73765d344c5a.html#/0",
+					"image": "assets/layouts/thumbs/5db96c8c-8b34-4743-b834-73765d344c5a-0.png"
+				}, {
+					"guid": "c869e1b4-49f1-4e54-994d-c00dd81d47fb",
+					"name": "Games 1",
+					"url": "assets/common-templates/c869e1b4-49f1-4e54-994d-c00dd81d47fb.html#/0",
+					"image": "assets/layouts/thumbs/c869e1b4-49f1-4e54-994d-c00dd81d47fb-0.png"
+				}, {
+					"guid": "b3cb24fa-5d29-4767-b622-31095c90af91",
+					"name": "Games 2",
+					"url": "assets/common-templates/b3cb24fa-5d29-4767-b622-31095c90af91.html#/0",
+					"image": "assets/layouts/thumbs/b3cb24fa-5d29-4767-b622-31095c90af91-0.png"
+				}, {
+					"guid": "169b3c70-9f08-4b6b-a46f-efa95e03905f",
+					"name": "Meeting",
+					"url": "assets/common-templates/169b3c70-9f08-4b6b-a46f-efa95e03905f.html#/0",
+					"image": "assets/layouts/thumbs/169b3c70-9f08-4b6b-a46f-efa95e03905f-0.png"
+				}, {
+					"guid": "bd66b166-432d-4fb5-b0f5-d12eaa7c306a",
+					"name": "Movies",
+					"url": "assets/common-templates/bd66b166-432d-4fb5-b0f5-d12eaa7c306a.html#/0",
+					"image": "assets/layouts/thumbs/bd66b166-432d-4fb5-b0f5-d12eaa7c306a-0.png"
+				}, {
+					"guid": "09dac396-1c2f-49f1-901f-a0d1dbe1c4ab",
+					"name": "Music 1",
+					"url": "assets/common-templates/09dac396-1c2f-49f1-901f-a0d1dbe1c4ab.html#/0",
+					"image": "assets/layouts/thumbs/09dac396-1c2f-49f1-901f-a0d1dbe1c4ab-0.png"
+				}, {
+					"guid": "2e043329-16b4-444b-9944-1cb54c2fbe47",
+					"name": "Music 2",
+					"url": "assets/common-templates/2e043329-16b4-444b-9944-1cb54c2fbe47.html#/0",
+					"image": "assets/layouts/thumbs/2e043329-16b4-444b-9944-1cb54c2fbe47-0.png"
+				}]
+			}, {
+				"name": "Menus",
+				"type": "menu",
+				"layouts": [{
+					"guid": "1aa6c8a4-19ed-403a-8e56-f0a9f85045c6",
+					"name": "Daily",
+					"url": "assets/common-templates/1aa6c8a4-19ed-403a-8e56-f0a9f85045c6.html#/0",
+					"image": "assets/layouts/thumbs/1aa6c8a4-19ed-403a-8e56-f0a9f85045c6-0.png"
+				}, {
+					"guid": "73a3f0e4-03a4-418b-b53f-64d7af1d5028",
+					"name": "Specials",
+					"url": "assets/common-templates/73a3f0e4-03a4-418b-b53f-64d7af1d5028.html#/0",
+					"image": "assets/layouts/thumbs/73a3f0e4-03a4-418b-b53f-64d7af1d5028-0.png"
+				}]
+			}, {
+				"name": "Outings",
+				"type": "outing",
+				"layouts": [{
+					"guid": "c49bc4e7-b0e2-47e3-bd9b-ba0dba20fb26",
+					"name": "Food",
+					"url": "assets/common-templates/c49bc4e7-b0e2-47e3-bd9b-ba0dba20fb26.html#/0",
+					"image": "assets/layouts/thumbs/c49bc4e7-b0e2-47e3-bd9b-ba0dba20fb26-0.png"
+				}, {
+					"guid": "3558803e-f8f5-4485-8ea6-35d5febdf4d0",
+					"name": "Shopping",
+					"url": "assets/common-templates/3558803e-f8f5-4485-8ea6-35d5febdf4d0.html#/0",
+					"image": "assets/layouts/thumbs/3558803e-f8f5-4485-8ea6-35d5febdf4d0-0.png"
+				}, {
+					"guid": "4d81c45f-9189-4402-97e7-da307d4aa4bb",
+					"name": "Tour",
+					"url": "assets/common-templates/4d81c45f-9189-4402-97e7-da307d4aa4bb.html#/0",
+					"image": "assets/layouts/thumbs/4d81c45f-9189-4402-97e7-da307d4aa4bb-0.png"
+				}]
+			}, {
+				"name": "Photos",
+				"type": "photo",
+				"layouts": [{
+					"guid": "f837f7fb-4157-4f48-8b93-1786e92f31cb",
+					"name": "Photo collage",
+					"url": "assets/common-templates/f837f7fb-4157-4f48-8b93-1786e92f31cb.html#/0",
+					"image": "assets/layouts/thumbs/f837f7fb-4157-4f48-8b93-1786e92f31cb-0.png"
+				}]
+			}, {
+				"name": "Weather",
+				"type": "weather",
+				"layouts": [{
+					"guid": "2f143c32-955f-48bc-8111-13d061212d31",
+					"name": "Weather",
+					"url": "assets/common-templates/2f143c32-955f-48bc-8111-13d061212d31.html#/0",
+					"image": "assets/layouts/thumbs/2f143c32-955f-48bc-8111-13d061212d31-0.png"
+				}]
+			}]
+		},
+
+		"print": {
+			"landscape": [{
+				"name": "Backgrounds",
+				"type": "backgrounds",
+				"layouts": [{
+					"guid": "63d413d0-a34f-4b6d-aaa2-a37f29680560",
+					"name": "Background 1",
+					"url": "assets/common-templates/63d413d0-a34f-4b6d-aaa2-a37f29680560.html#/0",
+					"image": "assets/layouts/thumbs/63d413d0-a34f-4b6d-aaa2-a37f29680560-0.png"
+				}, {
+					"guid": "20ee715c-3c58-4bab-8a6f-9411fca47bd7",
+					"name": "Background 2",
+					"url": "assets/common-templates/20ee715c-3c58-4bab-8a6f-9411fca47bd7.html#/0",
+					"image": "assets/layouts/thumbs/20ee715c-3c58-4bab-8a6f-9411fca47bd7-0.png"
+				}, {
+					"guid": "09e393a2-0e9f-4da8-8df4-44675571c37a",
+					"name": "Background 3",
+					"url": "assets/common-templates/09e393a2-0e9f-4da8-8df4-44675571c37a.html#/0",
+					"image": "assets/layouts/thumbs/09e393a2-0e9f-4da8-8df4-44675571c37a-0.png"
+				}, {
+					"guid": "54232b79-7c2a-4bd9-aa49-f5f442c5f377",
+					"name": "Background 4",
+					"url": "assets/common-templates/54232b79-7c2a-4bd9-aa49-f5f442c5f377.html#/0",
+					"image": "assets/layouts/thumbs/54232b79-7c2a-4bd9-aa49-f5f442c5f377-0.png"
+				}, {
+					"guid": "941e5d85-6a53-41a8-9cbc-e3efe6fb4eb0",
+					"name": "Background 5",
+					"url": "assets/common-templates/941e5d85-6a53-41a8-9cbc-e3efe6fb4eb0.html#/0",
+					"image": "assets/layouts/thumbs/941e5d85-6a53-41a8-9cbc-e3efe6fb4eb0-0.png"
+				}, {
+					"guid": "5a055c70-38c1-4cba-a80e-5925d22d0158",
+					"name": "Background 6",
+					"url": "assets/common-templates/5a055c70-38c1-4cba-a80e-5925d22d0158.html#/0",
+					"image": "assets/layouts/thumbs/5a055c70-38c1-4cba-a80e-5925d22d0158-0.png"
+				}, {
+					"guid": "6e25c7df-7d1e-45ae-92a2-b4f90c5765e4",
+					"name": "Background 7",
+					"url": "assets/common-templates/6e25c7df-7d1e-45ae-92a2-b4f90c5765e4.html#/0",
+					"image": "assets/layouts/thumbs/6e25c7df-7d1e-45ae-92a2-b4f90c5765e4-0.png"
+				}, {
+					"guid": "589305cd-0be6-4761-aeb5-dd9fecb8d320",
+					"name": "Background 8",
+					"url": "assets/common-templates/589305cd-0be6-4761-aeb5-dd9fecb8d320.html#/0",
+					"image": "assets/layouts/thumbs/589305cd-0be6-4761-aeb5-dd9fecb8d320-0.png"
+				}, {
+					"guid": "538bc386-f787-410e-8268-c7b428b38c2c",
+					"name": "Background 9",
+					"url": "assets/common-templates/538bc386-f787-410e-8268-c7b428b38c2c.html#/0",
+					"image": "assets/layouts/thumbs/538bc386-f787-410e-8268-c7b428b38c2c-0.png"
+				}, {
+					"guid": "bf680e8c-956e-468c-aba3-f2d75d3b00ba",
+					"name": "Background 10",
+					"url": "assets/common-templates/bf680e8c-956e-468c-aba3-f2d75d3b00ba.html#/0",
+					"image": "assets/layouts/thumbs/bf680e8c-956e-468c-aba3-f2d75d3b00ba-0.png"
+				}]
+			}, {
+				"name": "Birthdays",
+				"type": "birthday",
+				"layouts": [{
+					"guid": "68bda319-d616-412f-8922-3d62abd379da",
+					"name": "Birthday 1",
+					"url": "assets/common-templates/68bda319-d616-412f-8922-3d62abd379da.html#/0",
+					"image": "assets/layouts/thumbs/68bda319-d616-412f-8922-3d62abd379da-0.png"
+				}, {
+					"guid": "52470ec2-ec36-4c39-8a85-160e8239f4b2",
+					"name": "Birthday 2",
+					"url": "assets/common-templates/52470ec2-ec36-4c39-8a85-160e8239f4b2.html#/0",
+					"image": "assets/layouts/thumbs/52470ec2-ec36-4c39-8a85-160e8239f4b2-0.png"
+				}]
+			}, {
+				"name": "Events",
+				"type": "event",
+				"layouts": [{
+					"guid": "4d4648ef-6517-4f0d-8b86-6c59d41e2cfe",
+					"name": "Crafts 1",
+					"url": "assets/common-templates/4d4648ef-6517-4f0d-8b86-6c59d41e2cfe.html#/0",
+					"image": "assets/layouts/thumbs/4d4648ef-6517-4f0d-8b86-6c59d41e2cfe-0.png"
+				}, {
+					"guid": "b6f7fea4-b4a4-444d-a2d8-793d3d4c0393",
+					"name": "Crafts 2",
+					"url": "assets/common-templates/b6f7fea4-b4a4-444d-a2d8-793d3d4c0393.html#/0",
+					"image": "assets/layouts/thumbs/b6f7fea4-b4a4-444d-a2d8-793d3d4c0393-0.png"
+				}, {
+					"guid": "eece7fb6-d49d-4e61-bead-0280589a698a",
+					"name": "Exercise 1",
+					"url": "assets/common-templates/eece7fb6-d49d-4e61-bead-0280589a698a.html#/0",
+					"image": "assets/layouts/thumbs/eece7fb6-d49d-4e61-bead-0280589a698a-0.png"
+				}, {
+					"guid": "a63dae4b-2a44-49a4-a42c-03fad433bbb0",
+					"name": "Exercise 2",
+					"url": "assets/common-templates/a63dae4b-2a44-49a4-a42c-03fad433bbb0.html#/0",
+					"image": "assets/layouts/thumbs/a63dae4b-2a44-49a4-a42c-03fad433bbb0-0.png"
+				}, {
+					"guid": "03ea3b0a-9239-433c-b90b-d1c0cefe1788",
+					"name": "Games 1",
+					"url": "assets/common-templates/03ea3b0a-9239-433c-b90b-d1c0cefe1788.html#/0",
+					"image": "assets/layouts/thumbs/03ea3b0a-9239-433c-b90b-d1c0cefe1788-0.png"
+				}, {
+					"guid": "33ca7a5a-3ead-42ad-8f41-2f5f6b99ad8a",
+					"name": "Games 2",
+					"url": "assets/common-templates/33ca7a5a-3ead-42ad-8f41-2f5f6b99ad8a.html#/0",
+					"image": "assets/layouts/thumbs/33ca7a5a-3ead-42ad-8f41-2f5f6b99ad8a-0.png"
+				}, {
+					"guid": "b624fa4e-e5df-4963-b5ee-8a4121e53db2",
+					"name": "Lecture",
+					"url": "assets/common-templates/b624fa4e-e5df-4963-b5ee-8a4121e53db2.html#/0",
+					"image": "assets/layouts/thumbs/b624fa4e-e5df-4963-b5ee-8a4121e53db2-0.png"
+				}, {
+					"guid": "f42e6399-1702-4888-92ae-540132d6ecdd",
+					"name": "Meeting",
+					"url": "assets/common-templates/f42e6399-1702-4888-92ae-540132d6ecdd.html#/0",
+					"image": "assets/layouts/thumbs/f42e6399-1702-4888-92ae-540132d6ecdd-0.png"
+				}, {
+					"guid": "8fee1a9c-279b-46d2-a598-0f83d9ad88cb",
+					"name": "Movies",
+					"url": "assets/common-templates/8fee1a9c-279b-46d2-a598-0f83d9ad88cb.html#/0",
+					"image": "assets/layouts/thumbs/8fee1a9c-279b-46d2-a598-0f83d9ad88cb-0.png"
+				}, {
+					"guid": "cad59ad9-cd06-4b82-9a0e-d0af26745616",
+					"name": "Music 1",
+					"url": "assets/common-templates/cad59ad9-cd06-4b82-9a0e-d0af26745616.html#/0",
+					"image": "assets/layouts/thumbs/cad59ad9-cd06-4b82-9a0e-d0af26745616-0.png"
+				}, {
+					"guid": "85a910b0-f298-4368-83cb-8782921cd840",
+					"name": "Music 2",
+					"url": "assets/common-templates/85a910b0-f298-4368-83cb-8782921cd840.html#/0",
+					"image": "assets/layouts/thumbs/85a910b0-f298-4368-83cb-8782921cd840-0.png"
+				}]
+			}, {
+				"name": "Menus",
+				"type": "menu",
+				"layouts": [{
+					"guid": "2a61992f-7441-462e-a6b4-797f40eb8f5d",
+					"name": "Daily",
+					"url": "assets/common-templates/2a61992f-7441-462e-a6b4-797f40eb8f5d.html#/0",
+					"image": "assets/layouts/thumbs/2a61992f-7441-462e-a6b4-797f40eb8f5d-0.png"
+				}, {
+					"guid": "f9ac5c55-0454-4cb3-8d51-acf80b56a3bf",
+					"name": "Specials",
+					"url": "assets/common-templates/f9ac5c55-0454-4cb3-8d51-acf80b56a3bf.html#/0",
+					"image": "assets/layouts/thumbs/f9ac5c55-0454-4cb3-8d51-acf80b56a3bf-0.png"
+				}]
+			}, {
+				"name": "Outings",
+				"type": "outing",
+				"layouts": [{
+					"guid": "4c398b47-1688-4b07-99c1-bc7293b341d0",
+					"name": "Food",
+					"url": "assets/common-templates/4c398b47-1688-4b07-99c1-bc7293b341d0.html#/0",
+					"image": "assets/layouts/thumbs/4c398b47-1688-4b07-99c1-bc7293b341d0-0.png"
+				}, {
+					"guid": "cd485b4a-2c87-461d-81be-9c2b57e51f0d",
+					"name": "Shopping",
+					"url": "assets/common-templates/cd485b4a-2c87-461d-81be-9c2b57e51f0d.html#/0",
+					"image": "assets/layouts/thumbs/cd485b4a-2c87-461d-81be-9c2b57e51f0d-0.png"
+				}, {
+					"guid": "8da5ecae-1f06-47dc-81b1-84bdfefaad8e",
+					"name": "Tour",
+					"url": "assets/common-templates/8da5ecae-1f06-47dc-81b1-84bdfefaad8e.html#/0",
+					"image": "assets/layouts/thumbs/8da5ecae-1f06-47dc-81b1-84bdfefaad8e-0.png"
+				}]
+			}],
+
+			"portrait": [{
+				"name": "Backgrounds",
+				"type": "backgrounds",
+				"layouts": [{
+					"guid": "c0e6f30b-2dce-4d0c-b3d4-478c6514585e",
+					"name": "Background 1",
+					"url": "assets/common-templates/c0e6f30b-2dce-4d0c-b3d4-478c6514585e.html#/0",
+					"image": "assets/layouts/thumbs/c0e6f30b-2dce-4d0c-b3d4-478c6514585e-0.png"
+				}, {
+					"guid": "e03031c2-d6c7-499f-8dda-49472878ff01",
+					"name": "Background 2",
+					"url": "assets/common-templates/e03031c2-d6c7-499f-8dda-49472878ff01.html#/0",
+					"image": "assets/layouts/thumbs/e03031c2-d6c7-499f-8dda-49472878ff01-0.png"
+				}, {
+					"guid": "9d64b8d0-7471-41ed-ab45-bd8dfcedbea5",
+					"name": "Background 3",
+					"url": "assets/common-templates/9d64b8d0-7471-41ed-ab45-bd8dfcedbea5.html#/0",
+					"image": "assets/layouts/thumbs/9d64b8d0-7471-41ed-ab45-bd8dfcedbea5-0.png"
+				}, {
+					"guid": "8a2ad142-29bb-4497-b1c5-b731e3d3d41c",
+					"name": "Background 4",
+					"url": "assets/common-templates/8a2ad142-29bb-4497-b1c5-b731e3d3d41c.html#/0",
+					"image": "assets/layouts/thumbs/8a2ad142-29bb-4497-b1c5-b731e3d3d41c-0.png"
+				}, {
+					"guid": "9c513999-6e3c-4207-b32e-0e66ea5029d4",
+					"name": "Background 5",
+					"url": "assets/common-templates/9c513999-6e3c-4207-b32e-0e66ea5029d4.html#/0",
+					"image": "assets/layouts/thumbs/9c513999-6e3c-4207-b32e-0e66ea5029d4-0.png"
+				}, {
+					"guid": "aa34d5af-0f54-4708-afb2-b3f03da3d019",
+					"name": "Background 6",
+					"url": "assets/common-templates/aa34d5af-0f54-4708-afb2-b3f03da3d019.html#/0",
+					"image": "assets/layouts/thumbs/aa34d5af-0f54-4708-afb2-b3f03da3d019-0.png"
+				}, {
+					"guid": "999b172a-155c-4ac0-988e-616dcefca566",
+					"name": "Background 7",
+					"url": "assets/common-templates/999b172a-155c-4ac0-988e-616dcefca566.html#/0",
+					"image": "assets/layouts/thumbs/999b172a-155c-4ac0-988e-616dcefca566-0.png"
+				}, {
+					"guid": "6dce71f0-26b7-498a-8aa1-4d5b5b7ac862",
+					"name": "Background 8",
+					"url": "assets/common-templates/6dce71f0-26b7-498a-8aa1-4d5b5b7ac862.html#/0",
+					"image": "assets/layouts/thumbs/6dce71f0-26b7-498a-8aa1-4d5b5b7ac862-0.png"
+				}, {
+					"guid": "166bce04-dac0-44fb-a621-2bdac6902fd5",
+					"name": "Background 9",
+					"url": "assets/common-templates/166bce04-dac0-44fb-a621-2bdac6902fd5.html#/0",
+					"image": "assets/layouts/thumbs/166bce04-dac0-44fb-a621-2bdac6902fd5-0.png"
+				}, {
+					"guid": "5f4121ce-4ad1-4399-8ffd-665e34f6acf9",
+					"name": "Background 10",
+					"url": "assets/common-templates/5f4121ce-4ad1-4399-8ffd-665e34f6acf9.html#/0",
+					"image": "assets/layouts/thumbs/5f4121ce-4ad1-4399-8ffd-665e34f6acf9-0.png"
+				}]
+			}, {
+				"name": "Birthdays",
+				"type": "birthday",
+				"layouts": [{
+					"guid": "c734d918-81c9-45d6-8c43-c0fedc019afc",
+					"name": "Birthday 1",
+					"url": "assets/common-templates/c734d918-81c9-45d6-8c43-c0fedc019afc.html#/0",
+					"image": "assets/layouts/thumbs/c734d918-81c9-45d6-8c43-c0fedc019afc-0.png"
+				}, {
+					"guid": "14087197-0990-4b84-b1a2-e4be199709ee",
+					"name": "Birthday 2",
+					"url": "assets/common-templates/14087197-0990-4b84-b1a2-e4be199709ee.html#/0",
+					"image": "assets/layouts/thumbs/14087197-0990-4b84-b1a2-e4be199709ee-0.png"
+				}]
+			}, {
+				"name": "Events",
+				"type": "event",
+				"layouts": [{
+					"guid": "36eba9d9-bc48-4287-ae0a-cffe8910151c",
+					"name": "Crafts 1",
+					"url": "assets/common-templates/36eba9d9-bc48-4287-ae0a-cffe8910151c.html#/0",
+					"image": "assets/layouts/thumbs/36eba9d9-bc48-4287-ae0a-cffe8910151c-0.png"
+				}, {
+					"guid": "f0077d05-88d3-4870-86a1-79d0662d7838",
+					"name": "Crafts 2",
+					"url": "assets/common-templates/f0077d05-88d3-4870-86a1-79d0662d7838.html#/0",
+					"image": "assets/layouts/thumbs/f0077d05-88d3-4870-86a1-79d0662d7838-0.png"
+				}, {
+					"guid": "2c607a23-3ac2-48e1-ac4d-2abe0e116140",
+					"name": "Exercise 1",
+					"url": "assets/common-templates/2c607a23-3ac2-48e1-ac4d-2abe0e116140.html#/0",
+					"image": "assets/layouts/thumbs/2c607a23-3ac2-48e1-ac4d-2abe0e116140-0.png"
+				}, {
+					"guid": "bede9296-b5b6-4e9a-bbcb-f6699e60f3a0",
+					"name": "Exercise 2",
+					"url": "assets/common-templates/bede9296-b5b6-4e9a-bbcb-f6699e60f3a0.html#/0",
+					"image": "assets/layouts/thumbs/bede9296-b5b6-4e9a-bbcb-f6699e60f3a0-0.png"
+				}, {
+					"guid": "b6c3b272-a16b-4b8f-a054-467c3f70d9ec",
+					"name": "Games 1",
+					"url": "assets/common-templates/b6c3b272-a16b-4b8f-a054-467c3f70d9ec.html#/0",
+					"image": "assets/layouts/thumbs/b6c3b272-a16b-4b8f-a054-467c3f70d9ec-0.png"
+				}, {
+					"guid": "76892d26-2a02-44b9-b8c6-8c2d3b4a49ed",
+					"name": "Games 2",
+					"url": "assets/common-templates/76892d26-2a02-44b9-b8c6-8c2d3b4a49ed.html#/0",
+					"image": "assets/layouts/thumbs/76892d26-2a02-44b9-b8c6-8c2d3b4a49ed-0.png"
+				}, {
+					"guid": "3180dee7-fdae-4e3d-8b56-7f9788f38b7b",
+					"name": "Meeting",
+					"url": "assets/common-templates/3180dee7-fdae-4e3d-8b56-7f9788f38b7b.html#/0",
+					"image": "assets/layouts/thumbs/3180dee7-fdae-4e3d-8b56-7f9788f38b7b-0.png"
+				}, {
+					"guid": "ee3ddd82-4095-4ac8-bffa-32f8937a8ced",
+					"name": "Movies",
+					"url": "assets/common-templates/ee3ddd82-4095-4ac8-bffa-32f8937a8ced.html#/0",
+					"image": "assets/layouts/thumbs/ee3ddd82-4095-4ac8-bffa-32f8937a8ced-0.png"
+				}, {
+					"guid": "d3cd8b1c-1690-441c-ae0a-39a99c2a02f7",
+					"name": "Music 1",
+					"url": "assets/common-templates/d3cd8b1c-1690-441c-ae0a-39a99c2a02f7.html#/0",
+					"image": "assets/layouts/thumbs/d3cd8b1c-1690-441c-ae0a-39a99c2a02f7-0.png"
+				}, {
+					"guid": "9be42cba-c7a6-4f16-b3ab-950f1bfe0d59",
+					"name": "Music 2",
+					"url": "assets/common-templates/9be42cba-c7a6-4f16-b3ab-950f1bfe0d59.html#/0",
+					"image": "assets/layouts/thumbs/9be42cba-c7a6-4f16-b3ab-950f1bfe0d59-0.png"
+				}]
+			}, {
+				"name": "Menus",
+				"type": "menu",
+				"layouts": [{
+					"guid": "fc1c43f2-5981-4d7b-be1a-544a37577d5b",
+					"name": "Daily",
+					"url": "assets/common-templates/fc1c43f2-5981-4d7b-be1a-544a37577d5b.html#/0",
+					"image": "assets/layouts/thumbs/fc1c43f2-5981-4d7b-be1a-544a37577d5b-0.png"
+				}, {
+					"guid": "3b1e277f-fb60-4601-b5ae-8637097d5329",
+					"name": "Specials",
+					"url": "assets/common-templates/3b1e277f-fb60-4601-b5ae-8637097d5329.html#/0",
+					"image": "assets/layouts/thumbs/3b1e277f-fb60-4601-b5ae-8637097d5329-0.png"
+				}]
+			}, {
+				"name": "Outings",
+				"type": "outing",
+				"layouts": [{
+					"guid": "ae171d5d-8415-4481-b55a-87b21c4e0251",
+					"name": "Food",
+					"url": "assets/common-templates/ae171d5d-8415-4481-b55a-87b21c4e0251.html#/0",
+					"image": "assets/layouts/thumbs/ae171d5d-8415-4481-b55a-87b21c4e0251-0.png"
+				}, {
+					"guid": "1b441902-a731-4202-8f87-008b0ff8f24c",
+					"name": "Shopping",
+					"url": "assets/common-templates/1b441902-a731-4202-8f87-008b0ff8f24c.html#/0",
+					"image": "assets/layouts/thumbs/1b441902-a731-4202-8f87-008b0ff8f24c-0.png"
+				}, {
+					"guid": "5374797d-ef8f-4ab8-b1b1-0b96c84a6139",
+					"name": "Tour",
+					"url": "assets/common-templates/5374797d-ef8f-4ab8-b1b1-0b96c84a6139.html#/0",
+					"image": "assets/layouts/thumbs/5374797d-ef8f-4ab8-b1b1-0b96c84a6139-0.png"
+				}]
+			}]
+		}
+	},
+	"orientations": {
+
+      "print-landscape": {
+        "width": 3300,
+        "height": 2550,
+        "icon":"",
+        "label": "Print-Landscape"
+      },
+
+      "print-portrait": {
+        "width": 2550,
+        "height": 3300,
+        "icon":"",
+        "label": "Print-Portrait"
+      },
+
+      "print-poster": {
+	  	"width": 7200,
+		"height": 4752,
+		"icon": "",
+		"label": "Poster 36 x 24"
+	  },
+
+      "digital-landscape": {
+        "width": 1920,
+        "height": 1080,
+        "icon":"",
+        "label": "Digital-Landscape"
+      },
+
+      "digital-portrait": {
+        "width": 1080,
+        "height": 1920,
+        "icon":"",
+        "label": "Digital-Portrait"
+      },
+	  "large-print-landscape": {
+	  	"width": 5100,
+		"height": 3300,
+		"icon": "",
+		"label": "17 x 11"
+	  }
+    }
+}

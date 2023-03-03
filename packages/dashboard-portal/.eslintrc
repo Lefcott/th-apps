@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "react-important-stuff",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "babel-eslint",
+  "globals": {
+    "process": true
+  },
+  "rules": {
+    "jsx-a11y/interactive-supports-focus": 1
+  }
+}

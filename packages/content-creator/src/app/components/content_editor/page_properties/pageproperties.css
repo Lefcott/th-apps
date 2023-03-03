@@ -1,0 +1,155 @@
+.pageProperties__tile-item {
+  height: 100px;
+  background-color: #ddd;
+  border: 1px solid #cecece;
+  display: flex;
+  width: 350px;
+  flex-basis: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
+}
+.modal-sm {
+  max-width: 600px;
+  min-width: 650px;
+}
+.modal-md {
+  max-width: 900px;
+  width: 100%;
+}
+.pageProperties__tile-item label.checkmark__container {
+  min-width: 200px;
+}
+
+.slide__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__details-template {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pageProperties__container-background-color {
+  width: 50%;
+}
+
+.pageProperties__container-background-color .property__label {
+  margin-left: 24%;
+  width: 76%;
+}
+
+.pageProperties__container background-color-picker i {
+  right: 24px;
+}
+
+.pageProperties__container .sp-replacer {
+  margin-left: 24%;
+}
+
+.slide__details .sp-replacer {
+  width: 300px;
+  max-width: 300px;
+  margin: 0;
+  height: 40px;
+}
+.slide-details .sp-preview {
+  width: 250px;
+}
+.slide__details .property__container--color {
+  width: 250px;
+  margin-left: 12%;
+  padding: 0;
+  right: 15px;
+}
+
+.slide__details .property__label {
+  padding-top: 0;
+}
+.slide__details .property__label {
+  margin-left: 0;
+}
+.property__container--color i .slide__details .sp-preview {
+  width: 250px;
+}
+
+.background__image {
+  height: 250px;
+  margin-top: 3%;
+}
+.background__upload i {
+  font-size: 4em;
+  padding-bottom: 2%;
+}
+.background__upload {
+  height: 87%;
+  line-height: 1.2em;
+  color: grey;
+  outline: 1px dashed lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pageProperties__tile {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pageProperties__tile .pageProperties__tile-item {
+  flex-basis: 40%;
+}
+.pageProperties__tile-color {
+  width: 95%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  margin-left: 1%;
+}
+
+.pageProperties__tile-color label,
+.pageProperties__tile-color .sp-preview-inner,
+.pageProperties__tile-color .property__container--color,
+.pageProperties__tile-color .sp-replacer {
+  margin-left: 0%;
+}
+
+.pageProperties__container {
+  display: flex;
+  flex-direction: column;
+}
+.pageProperties__container--button {
+  display: flex;
+  padding: 15px;
+  justify-content: flex-end;
+}
+.pageProperties__checkmarks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 15px;
+}
+.pageProperties__button {
+  border-radius: 1px;
+  height: 40px;
+  color: white;
+  background: #3fa4ab;
+}
+.pageProperties__button:hover {
+  background-color: #6dbcc2;
+  color: white;
+}
+.pageProperties__tile-item i {
+  font-size: 3rem;
+}
+.button__delete {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button__delete i {
+  font-size: 1.7em;
+}

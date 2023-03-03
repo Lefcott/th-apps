@@ -1,0 +1,66 @@
+/* color-picker style overwrites */
+.sp-replacer{
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #cecece;
+    width: 81%;
+    padding: 0;
+    align-items: center;
+    border-radius: 1px;
+    max-width: 225px;
+}
+.sp-preview{
+    width: 100%;
+    height: 39px;
+    border: none;
+    margin:0;
+    padding: 0;
+}
+.sp-dd {
+    position: absolute;
+    height: 40px;
+    width: 50px;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+    z-index: 35;
+}
+
+
+.sp-replacer:hover, .sp-replacer.sp-active, .sp-container{
+    border: 1px solid #cecece;
+}
+
+.sp-replacer.sp-light {
+    max-width: 310px;
+    width: 310px;
+}
+
+.color-picker-select {
+    position: relative;
+}
+
+.colorpicker_property_tile .color-picker-select {
+    margin-left: 18px;
+    max-width: 163px;
+}
+
+.colorpicker_property_tile .sp-replacer.sp-light {
+  width: 163px;
+}
+
+
+.color-picker-select svg {
+    position: absolute;
+    display: flex !important;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    height: 40px;
+    width: 50px;
+    background: rgba(180, 180, 180, 0.5);
+    pointer-events: none;
+    padding: 0 15px;
+
+}

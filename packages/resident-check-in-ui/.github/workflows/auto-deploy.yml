@@ -1,0 +1,53 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  deploy-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_TOKEN }}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          K4_ENV: dev
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Deploy
+        run: |
+          echo Deploying bundle to dev
+          aws s3 cp --recursive ./dist s3://apps-dev.k4connect.com/teamhub/resident-check-in
+          echo Invalidating dev cloudfront cache
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.DEV_CLOUDFRONT }} --paths /\*
+  deploy-staging:
+    runs-on: ubuntu-latest
+    needs: [deploy-dev]
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_TOKEN }}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          K4_ENV: staging
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Deploy
+        run: |
+          echo Deploying bundle to staging
+          aws s3 cp --recursive ./dist s3://apps-staging.k4connect.com/teamhub/resident-check-in
+          echo Invalidating cloudfront cache for staging env
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT }} --paths /\*

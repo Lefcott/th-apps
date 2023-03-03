@@ -1,0 +1,32 @@
+.pageDuration__label {
+  margin-left: 0.5rem;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  height: 21px;
+  text-align: left;
+  width: 74px;
+}
+
+.pageDuration__input {
+  background-color: #ffffff;
+  border: solid 1px lightgrey;
+  height: 40px;
+  text-align: center;
+  width: 70px;
+}
+
+.pageDuration__input::-webkit-outer-spin-button,
+.pageDuration__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.pageDuration__input.ng-invalid.ng-touched {
+  background-color: rgba(255, 224, 204, 1);
+}
+
+.form-horizontal{
+  display: flex;
+  flex-direction: column
+}

@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  variables:
+    ENV: "production"
+
+
+phases:
+  build:
+    commands:
+      - echo Building Creator
+      - git init
+      - rm package-lock.json
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 cp --recursive dist s3://k4-builds/creator
+      - aws s3 cp settings-default.json s3://k4connect-document-settings-dev
+artifacts:
+  files:
+    - ./**/*
+# cache:
+#   paths:
+#     - '/root/.m2/**/*'

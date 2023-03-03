@@ -1,0 +1,8 @@
+{
+	"useTabs": true,
+	"trailingComma": "all",
+	"arrowParens": "always",
+	"insertPragma": false,
+	"endOfLine": "lf",
+	"semi": true
+}

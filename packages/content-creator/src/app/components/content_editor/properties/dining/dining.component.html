@@ -1,0 +1,75 @@
+<!-- @format -->
+
+<header-properties-component
+	on-menu-property-change="$ctrl.onMenuPropertyChange(property, value)"
+></header-properties-component>
+
+<menu-opacity-slider-component
+	value="data.opacity"
+	on-opacity-change="$ctrl.onOpacityChange(opacity)"
+></menu-opacity-slider-component>
+
+<restaurant-picker-component
+	restaurants="refs.restaurants"
+	restaurant="$ctrl.getRestaurantById(data.restaurant)"
+	on-restaurant-change="$ctrl.onRestaurantChange(restaurant, $event)"
+></restaurant-picker-component>
+
+<menu-picker-component
+	menus="refs.menus"
+	menu="$ctrl.getMenuById(data.menu)"
+	on-menu-change="$ctrl.onMenuChange(menu)"
+>
+</menu-picker-component>
+
+<menu-week-picker-component
+	menu="$ctrl.getMenuById(data.menu)"
+	ng-if="$ctrl.contentEditorService.isMenuWeekly"
+	menu-week="data.menuWeek"
+	on-menu-week-change="$ctrl.onMenuWeekChange(week)"
+></menu-week-picker-component>
+
+<menu-meal-multi-picker-component
+	ng-if="$ctrl.contentEditorService.isMenuWeekly"
+	menu="$ctrl.getMenuById(data.menu)"
+	menu-meals="data.menuMeals"
+	on-menu-meals-change="$ctrl.onMenuMealsChange(meals)"
+></menu-meal-multi-picker-component>
+
+<menu-day-picker-component
+	menu="$ctrl.getMenuById(data.menu)"
+	ng-if="
+		$ctrl.contentEditorService.isMenuDaily ||
+		$ctrl.contentEditorService.isMenuDailySpecial
+	"
+	menu-day="data.menuDay"
+	on-menu-day-change="$ctrl.onMenuDayChange(day)"
+></menu-day-picker-component>
+
+<menu-meal-picker-component
+	ng-if="
+		$ctrl.contentEditorService.isMenuDaily ||
+		$ctrl.contentEditorService.isMenuDailySpecial
+	"
+	menu="$ctrl.getMenuById(data.menu)"
+	menu-meal="$ctrl.getMealsById(data.menuMeals)[0]"
+	on-menu-meals-change="$ctrl.onMenuMealsChange(meals)"
+></menu-meal-picker-component>
+
+<menu-item-picker-component
+	ng-if="$ctrl.contentEditorService.isMenuDailySpecial"
+	menu="$ctrl.getMenuById(data.menu)"
+	menu-meals="data.menuMeals"
+	menu-item="$ctrl.getMenuItemById(data.menuItem)"
+	menu-items="$ctrl.getMenuItemsForDay(data.menuDay)"
+	on-menu-item-change="$ctrl.onMenuItemChange(item)"
+>
+</menu-item-picker-component>
+
+<menu-properties-component
+	include-descriptions="data.includeDescriptions"
+	include-categories="data.includeCategories"
+	include-images="data.includeImages"
+	on-menu-property-change="$ctrl.onMenuPropertyChange(property, value)"
+>
+</menu-properties-component>

@@ -1,0 +1,35 @@
+<div class="modal-header">
+	<h3 class="modal-title" id="modal-title">Image Cropper</h3>
+	<div class="modal-close" ng-click="$ctrl.cancel()">
+		<i ng-click="$ctrl.cancel()" class="fas fa-times"></i>
+	</div>
+</div>
+<div class="modal-body" id="modal-body">
+	<div id="image-container"></div>
+	<canvas id="image-canvas" style="height: 384px; width: 512px"></canvas>
+</div>
+<div class="modal-footer">
+	<div class="edit-group">
+		<button type="button" class="btn pageProperties__button" data-method="rotate" data-option="-45" title="Rotate Left" ng-click="$ctrl.rotateCounterClock()">
+			<span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="cropper.rotate(-45)">
+				<i class="material-icons rotate">rotate_left</i>
+			</span>
+		</button>
+		<button type="button" class="btn pageProperties__button" data-method="rotate" data-option="45" title="Rotate Right" ng-click="$ctrl.rotateClock()">
+			<span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="cropper.rotate(45)">
+					<i class="material-icons rotate">rotate_right</i>
+			</span>
+		</button>
+		<button type="button" class="btn pageProperties__button" data-method="zoom" data-option="0.1" title="Zoom In" ng-click="$ctrl.zoomIn()">
+			<span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="cropper.zoom(0.1)">
+				<span class="fa fa-search-plus"></span>
+			</span>
+		</button>
+		<button type="button" class="btn pageProperties__button" data-method="zoom" data-option="-0.1" title="Zoom Out" ng-click="$ctrl.zoomOut()">
+			<span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="cropper.zoom(-0.1)">
+				<span class="fa fa-search-minus"></span>
+			</span>
+		</button>
+	</div>
+	<button class="btn pageProperties__button" type="button" ng-click="$ctrl.done()">Add Image</button>
+</div>

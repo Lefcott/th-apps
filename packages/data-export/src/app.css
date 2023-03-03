@@ -1,0 +1,9 @@
+/** @format */
+
+.search-highlighter-class {
+  background-color: #ffe4d1;
+}
+
+.MuiAutocomplete-listbox {
+  max-height: 200px !important;
+}

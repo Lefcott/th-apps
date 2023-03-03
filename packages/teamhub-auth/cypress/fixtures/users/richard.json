@@ -1,0 +1,10 @@
+{
+  "firstName": "Richard",
+  "lastName": "Belding",
+  "email": "Richard.Belding@k4connect.com",
+  "password": "DashboardTest",
+  "communities": [
+    { "id": 3134, "name": "DO NOT USE - Automated Dashboard Test" },
+    { "id": 14, "name": "Operational Test Bed" }
+  ]
+}

@@ -1,0 +1,55 @@
+<div class="zoom-component">
+  <h4 class="editor__zoom-title">
+    Zoom
+    <span>{{$ctrl.zoomPercentage()}}</span>
+  </h4>
+
+  <div class="zoom-container tool-style">
+    <button
+      class="btnZoom"
+      id="CR_zoom-out"
+      type="button"
+      tool-tip="Zoom Out"
+      ng-click="$ctrl.zoomBtn('zoomOut')"
+      ng-class="{'zoom-disable': $ctrl.disableZoomOut()}"
+      ng-disabled="$ctrl.disableZoomOut()"
+    >
+      <i
+        class="fas fa-search-minus"
+        tabindex="0"
+        class="zoom-icons"
+        aria-hidden="true"
+      ></i>
+    </button>
+    <button
+      class="btnZoom"
+      id="CR_zoom-reset"
+      type="button"
+      tool-tip="Reset Zoom"
+      ng-click="$ctrl.zoomBtn('zoomReset')"
+    >
+      <i
+        class="fas fa-compress-arrows-alt"
+        tabindex="0"
+        class="zoom-icons"
+        aria-hidden="true"
+      ></i>
+    </button>
+    <button
+      class="btnZoom"
+      id="CR_zoom-in"
+      type="button"
+      tool-tip="Zoom In"
+      ng-click="$ctrl.zoomBtn('zoomIn')"
+      ng-class="{'zoom-disable': $ctrl.disableZoomIn()}"
+      ng-disabled="$ctrl.disableZoomIn()"
+    >
+      <i
+        class="fas fa-search-plus"
+        tabindex="0"
+        class="zoom-icons"
+        aria-hidden="true"
+      ></i>
+    </button>
+  </div>
+</div>

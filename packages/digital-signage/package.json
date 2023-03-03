@@ -1,0 +1,111 @@
+{
+  "name": "digital-signage",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.4",
+    "@date-io/moment": "^1.3.11",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@k4connect/caregiver-prettier": "^1.0.1",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/pickers": "^3.2.6",
+    "axios": "^0.18.1",
+    "formik": "^1.5.8",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.2",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.25",
+    "notistack": "^0.9.9",
+    "raygun4js": "^2.18.1",
+    "rc-swipeout": "^2.0.11",
+    "react": "^16.8.4",
+    "react-content-loader": "^4.2.1",
+    "react-dom": "^16.8.4",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-virtuoso": "^1.8.6",
+    "rrule": "git+https://github.com/k4connect/rrule.git#feature/duration",
+    "stylis-plugin-extra-scope": "^0.2.1",
+    "url-search-params-polyfill": "^6.0.0",
+    "use-debounce": "^5.0.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --port 3003 --https",
+    "build": "webpack --mode=production",
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
+    "test-no-watch": "CI=true react-scripts test --passWithNoTests",
+    "analyze": "webpack --mode=production --env.analyze=true",
+    "lint": "eslint src --ext js --fix",
+    "format": "prettier --write './**'",
+    "watch-tests": "cross-env BABEL_ENV=test jest --watch",
+    "coverage": "cross-env BABEL_ENV=test jest --coverage",
+    "cy-dev": "cypress open",
+    "docs": "documentation build cypress/** -f md --markdown-toc-max-depth 2 -o cypress/README.md"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write --single-quote",
+      "eslint --fix",
+      "git add ."
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "ie 11"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "prettier": "@k4connect/caregiver-prettier",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.8.7",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^9.5.0",
+    "@types/jest": "^25.2.1",
+    "@types/systemjs": "^6.1.0",
+    "babel-eslint": "^11.0.0-beta.2",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-imports": "^2.0.0",
+    "cross-env": "^7.0.2",
+    "cypress-file-upload": "^4.0.4",
+    "documentation": "^12.1.4",
+    "dotenv-webpack": "^2.0.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-react-important-stuff": "^2.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "file-loader": "^6.0.0",
+    "husky": "^3.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.2.7",
+    "jest-cli": "^25.2.7",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "single-spa-react": "^2.14.0",
+    "systemjs-webpack-interop": "^1.1.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-config-single-spa-react": "^1.0.3",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  }
+}

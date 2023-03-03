@@ -1,0 +1,25 @@
+<div>
+    <!-- INSERT, SLIDES, THEME BUTTONS -->
+    <button ng-repeat="button in $ctrl.actionMenuService.menuItems" id="{{button.id}}" type="button" class="{{button.class}}"
+        ng-click="$ctrl.openMainDrawer(button)" ng-class="{ 'active-buttons': button.active }" ng-show={{button.show}}>{{button.buttonText}}</button>
+</div>
+
+<!-- MAIN DRAWER -->
+<div class="main-drawer-container" ng-show="$ctrl.actionMenuService.mainDrawer">
+
+    <!-- SLIDES -->
+    <button ng-repeat="categoryButton in $ctrl.layoutService.slideData track by $index" ng-show="$ctrl.actionMenuService.currentType == 'layoutOptions'"
+        type="button" class="action-menu__category-buttons" ng-click="$ctrl.showSlideCategory(categoryButton.type, $index)" ng-class="{ 'action-menu__category-buttons--active': $ctrl.selectedCat == $index }">{{categoryButton.name}}</button>
+
+    <!-- DIVIDER -->
+    <hr class="action-menu__hr-line">
+
+    <!-- DISPLAY AREA -->
+    <div ng-show="!$ctrl.categorySelection.length" class="no-templates">You have not created any templates yet.</div>
+    <div ng-show="$ctrl.actionMenuService.currentType == 'layoutOptions'" ng-repeat="layout in $ctrl.categorySelection" class="thumbnail-image"
+        ng-click="$ctrl.mainSwitchBoard(layout)">
+        <img ng-show="layout.image" class="thumbnail-image-tag" aria-hidden="true" ng-src="{{$ctrl.getThumbs(layout.image)}}">
+        <span class="thumbnail-image-tag--info">{{layout.name}}</span>
+    </div>
+
+</div>

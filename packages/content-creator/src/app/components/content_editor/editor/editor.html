@@ -1,0 +1,279 @@
+<!-- @format -->
+
+<div class="toolbox">
+	<div class="editor__tiles-container">
+		<undo-redo-component></undo-redo-component>
+
+		<span class="editor__toolbox-title">Tools</span>
+		<div class="editor__tiles-grid">
+			<div
+				class="editor__tile"
+				id="editor__tile-text"
+				ng-class="{ 'button-disabled' : $ctrl.contentEditorService.lockStyle }"
+				ng-click="$ctrl.contentEditorService.lockStyle || $ctrl.addText()"
+			>
+				<div class="editor__tile-item">
+					<i class="fas fa-text-height editor__tile-icon"></i>
+					<span>Text</span>
+				</div>
+			</div>
+			<div class="editor__tile" id="editor__tile-image">
+				<div
+					class="editor__tile-item"
+					ng-class="{ 'button-disabled' : $ctrl.contentEditorService.lockStyle }"
+					ng-click="$ctrl.contentEditorService.lockStyle || $ctrl.addImage()"
+				>
+					<i class="fas fa-images editor__tile-icon"></i>
+					<span>Image</span>
+				</div>
+			</div>
+			<div
+				class="editor__tile"
+				id="editor__tile-shapes"
+				ng-class="{ 'button-disabled' : $ctrl.contentEditorService.lockStyle }"
+				ng-click="$ctrl.contentEditorService.lockStyle || $ctrl.widgetOrPageProperties('shape')"
+			>
+				<div class="editor__tile-item">
+					<i class="fas fa-square-full editor__tile-icon"></i>
+					<span>Shapes</span>
+				</div>
+			</div>
+			<div class="editor__tile" id="editor__tile-line">
+				<div
+					class="editor__tile-item"
+					ng-class="{ 'button-disabled' : $ctrl.contentEditorService.lockStyle }"
+					ng-click="$ctrl.contentEditorService.lockStyle || $ctrl.addShape('line')"
+				>
+					<i class="material-icons editor__tile-icon">linear_scale</i>
+					<span>Line</span>
+				</div>
+			</div>
+			<div class="editor__tile" id="editor__tile-widgets">
+				<div
+					class="editor__tile-item"
+					ng-class="{ 'button-disabled' : $ctrl.contentEditorService.lockStyle }"
+					ng-click="$ctrl.contentEditorService.lockStyle || $ctrl.widgetOrPageProperties('widget')"
+					ng-disabled="$ctrl.contentEditorService.lockStyle"
+				>
+					<i class="fas fa-puzzle-piece editor__tile-icon"></i>
+					<span>Widgets</span>
+				</div>
+			</div>
+			<div class="editor__tile" id="editor__tile-properties">
+				<div
+					class="editor__tile-item pageproperties__tile"
+					ng-click="$ctrl.pageProperties()"
+				>
+					<i class="fas fa-file editor__tile-icon"></i>
+					<span>Properties</span>
+				</div>
+			</div>
+			<div class="editor__tile-checkmark">
+				<label class="checkmark__container">
+					<span class="checkbox__label">Show Grid</span>
+					<input
+						class="checkbox"
+						type="checkbox"
+						ng-click="$ctrl.contentEditorService.gridEnabled = !$ctrl.contentEditorService.gridEnabled"
+						ng-checked="$ctrl.contentEditorService.gridEnabled"
+						aria-label="Follower input"
+					/>
+					<span class="checkmark"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="element-properties">
+	<div class="property__controls--top">
+		<div id="default_back_btn" ng-click="$ctrl.back()">
+			<i class="fas fa-chevron-left"></i>
+			Back
+		</div>
+	</div>
+
+	<undo-redo-component></undo-redo-component>
+
+	<div
+		class="property__tile"
+		ng-show="$ctrl.contentEditorService.isCalendarWidget && $ctrl.contentEditorService.isMonthlyCalendarWidget"
+	>
+		<calendar-properties-component></calendar-properties-component>
+	</div>
+
+	<div
+		class="property__tile colorpicker_property_tile"
+		ng-hide="$ctrl.contentEditorService.isWidget || $ctrl.contentEditorService.isImg || $ctrl.contentEditorService.isText"
+	>
+		<background-color-picker></background-color-picker>
+	</div>
+	<div
+		class="property__tile"
+		ng-hide="$ctrl.contentEditorService.isCircle || $ctrl.contentEditorService.isWidget"
+	>
+		<rotation-component></rotation-component>
+	</div>
+	<div
+		class="property__tile"
+		ng-hide="$ctrl.contentEditorService.isWidget && (!$ctrl.contentEditorService.isCalendarWidget || $ctrl.contentEditorService.isMonthlyCalendarWidget) "
+	>
+		<opacity-component></opacity-component>
+	</div>
+	<div class="property__tile">
+		<depth-component></depth-component>
+	</div>
+	<div class="property__tile" ng-show="$ctrl.contentEditorService.isLine">
+		<line-width-component></line-width-component>
+	</div>
+	<div
+		class="property__tile"
+		ng-show="$ctrl.contentEditorService.isWidget || $ctrl.contentEditorService.isImg || $ctrl.contentEditorService.isShape"
+	>
+		<maximize-component></maximize-component>
+	</div>
+	<div
+		class="property__tile colorpicker_property_tile"
+		ng-hide="$ctrl.contentEditorService.isWidget || $ctrl.contentEditorService.isImg"
+	>
+		<border-component></border-component>
+	</div>
+
+	<div
+		class="property__tile"
+		ng-show="$ctrl.contentEditorService.isCalendarWidget"
+	>
+		<date-picker-component></date-picker-component>
+	</div>
+	<div
+		class="property__tile"
+		ng-show="$ctrl.contentEditorService.isCalendarWidget"
+	>
+		<calendar-picker-component></calendar-picker-component>
+	</div>
+
+	<div
+		class="property__tile"
+		ng-show="$ctrl.contentEditorService.isExternalWidget"
+	>
+		<external-src-component></external-src-component>
+	</div>
+
+	<div class="property__tile" ng-hide="!$ctrl.contentEditorService.isTemplate">
+		<div>
+			<resize-control-component></resize-control-component>
+		</div>
+		<div>
+			<drag-control-component></drag-control-component>
+		</div>
+		<div>
+			<control-style-component></control-style-component>
+		</div>
+		<div>
+			<content-control-component></content-control-component>
+		</div>
+	</div>
+
+	<div class="property__tile">
+		<dining-component
+			ng-show="$ctrl.contentEditorService.isMenuWeekly || $ctrl.contentEditorService.isMenuDaily || $ctrl.contentEditorService.isMenuDailySpecial"
+		>
+		</dining-component>
+	</div>
+</div>
+
+<div>
+	<div ng-hide="$ctrl.contentEditorService.lockContent">
+		<remove-element-component></remove-element-component>
+	</div>
+
+	<div class="tiles__shape">
+		<div class="property__controls--top">
+			<div ng-click="$ctrl.back()">
+				<i class="fas fa-chevron-left"></i>
+				Back
+			</div>
+		</div>
+		<div class="tiles__shape-grid">
+			<div class="tile__select" ng-click="$ctrl.addShape('rectangle')">
+				<i class="fas fa-square"></i>
+				Square
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addShape('circle')">
+				<i class="fas fa-circle"></i>
+				Circle
+			</div>
+		</div>
+	</div>
+
+	<div class="tiles__widget">
+		<div class="property__controls--top">
+			<div ng-click="$ctrl.back()">
+				<i class="fas fa-chevron-left"></i>
+				Back
+			</div>
+		</div>
+		<div class="tiles__widget-grid">
+			<div class="tile__select" ng-click="$ctrl.addWidget('single-weather')">
+				<i class="fas fa-cloud"></i>
+				Daily Weather
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('three-day-weather')">
+				<i class="fas fa-cloud"></i>
+				3 Day Weather
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('event-daily')">
+				<i class="far fa-calendar"></i>
+				Today's Events
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('date-time')">
+				<i class="far fa-clock"></i>
+				Date/Time
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('day-calendar')">
+				<i class="far fa-calendar-alt"></i>
+				Daily Calendar
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('week-calendar')">
+				<i class="far fa-calendar-alt"></i>
+				Weekly Calendar
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('month-calendar')">
+				<i class="far fa-calendar-alt"></i>
+				Monthly Calendar
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('events-location')">
+				<i class="fas fa-map-marked"></i>
+				Calendar Key
+			</div>
+			<div
+				ng-if="$ctrl.featureFlagService.flags.teamhub_dining"
+				class="tile__select"
+				ng-click="$ctrl.addWidget('menu-weekly')"
+			>
+				<i class="fas fa-utensils"></i>
+				Weekly Menu
+			</div>
+			<div
+				ng-if="$ctrl.featureFlagService.flags.teamhub_dining"
+				class="tile__select"
+				ng-click="$ctrl.addWidget('menu-daily')"
+			>
+				<i class="fas fa-utensils"></i>
+				Daily Menu
+			</div>
+			<div
+				class="tile__select"
+				ng-if
+				ng-click="$ctrl.addWidget('menu-daily-special')"
+			>
+				<i class="fas fa-utensils"></i>
+				Daily Special
+			</div>
+			<div class="tile__select" ng-click="$ctrl.addWidget('external-widget')">
+				<span class="material-icons"> web_asset </span>
+				Website
+			</div>
+		</div>
+	</div>
+</div>

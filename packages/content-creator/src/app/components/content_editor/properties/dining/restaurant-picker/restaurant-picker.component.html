@@ -1,0 +1,37 @@
+<!-- @format -->
+
+<div class="mt-1">
+	<label id="restaurantLabel" class="property__label" for="restaurant-picker"
+		>Restaurant</label
+	>
+	<div class="dropdown">
+		<button
+			class="btn btn-default dropdown-toggle cc-dropdown-toggle"
+			type="button"
+			id="restaurant-picker"
+			data-toggle="dropdown"
+			aria-haspopup="true"
+			aria-expanded="true"
+		>
+			<span class="cc-dropdown-toggle-text">
+				{{ $ctrl.restaurant.name }}
+			</span>
+			<span>
+				<span class="caret"></span>
+			</span>
+		</button>
+		<ul
+			class="dropdown-menu cc-dropdown-menu"
+			aria-labelledby="restaurant-picker"
+		>
+			<li
+				class="cc-dropdown-menu-item"
+				ng-repeat="restaurant in $ctrl.restaurants"
+			>
+				<a ng-click="$ctrl.onSelect(restaurant)" href="#">{{
+					restaurant.name
+				}}</a>
+			</li>
+		</ul>
+	</div>
+</div>

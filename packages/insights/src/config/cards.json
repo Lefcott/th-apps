@@ -1,0 +1,68 @@
+[
+  {
+    "embedId": "e408ba56-bfb8-4926-bc1c-784910a6c945", 
+    "tag": "App-Invites-Accepted",
+    "type": "Engagement",
+    "width": 4
+  },
+  {
+    "embedId": "f811bb50-3aa1-4a52-84b8-c00b1d194500", 
+    "tag": "Daily-Interactions-Per-Resident",
+    "type": "Engagement",
+    "width": 4
+  },
+  {
+    "embedId": "9f2d7d7e-b176-4421-882d-6ba50a565f34", 
+    "tag": "Average-Posts-Per-Day",
+    "type": "Engagement",
+    "width": 4
+  },
+  {
+    "embedId": "b15c5eb5-4fa7-445e-a91d-85b913b17431", 
+    "tag": "Active-Residents",
+    "type": "Engagement",
+    "width": 6
+  },
+  {
+    "embedId": "316d9c17-30e9-4416-ae8d-deb1a2b8a1ac", 
+    "tag": "Published-Content",
+    "type": "Content",
+    "width": 6
+  },
+  {
+    "embedId": "a5e5af52-8d55-4a30-aeeb-7062b3349fe9", 
+    "tag": "Most-Popular-Features",
+    "type": "Content",
+    "width": 6
+  },
+  {
+    "embedId": "568334bd-c6ef-408a-a1e0-af0af45d6026", 
+    "tag": "Most-Popular-Events",
+    "type": "Content",
+    "width": 6
+  },
+  {
+    "embedId": "df24cd46-668a-4520-a806-293c6211a18b", 
+    "tag": "RCI-Alerts-Time-To-Clear",
+    "type": "RCI-Alerts",
+    "width": 6
+  },
+  {
+    "embedId": "307e4a42-0fc2-48e2-9ba5-cd6d5b079045", 
+    "tag": "RCI-Alerts-By-Room",
+    "type": "RCI-Alerts",
+    "width": 6
+  },
+  {
+    "embedId": "3ddee794-c4f2-416b-abc0-daba6a8c339c", 
+    "tag": "Smart-Home-Lighting",
+    "type": "Smart-Home",
+    "width": 6
+  },
+  {
+    "embedId": "a9845b3d-6944-4515-b735-abd5d4f3b804", 
+    "tag": "Smart-Home-Thermostat",
+    "type": "Smart-Home",
+    "width": 6
+  }
+]

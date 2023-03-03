@@ -1,0 +1,16 @@
+.property__elementremove{
+    display: flex;
+    margin-top: 5%;
+    height: 50px;
+    border: 0;
+    font-weight: 600;
+}
+.property__elementremove-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.property__elementremove--button.icon{
+    font-size: 2.5em
+}

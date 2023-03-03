@@ -1,0 +1,73 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "INTERFACE",
+        "name": "K4Object",
+        "possibleTypes": [
+          { "name": "My" },
+          { "name": "Resident" },
+          { "name": "Contact" },
+          { "name": "Event" },
+          { "name": "EventCalendar" },
+          { "name": "Series" },
+          { "name": "Newsletter" },
+          { "name": "Resource" },
+          { "name": "Announcement" },
+          { "name": "UserRSVP" },
+          { "name": "GuestRSVP" },
+          { "name": "K4SupportTicket" },
+          { "name": "Design" },
+          { "name": "Photo" },
+          { "name": "Document" }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "User",
+        "possibleTypes": [
+          { "name": "My" },
+          { "name": "Resident" },
+          { "name": "Contact" }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "RSVP",
+        "possibleTypes": [{ "name": "UserRSVP" }, { "name": "GuestRSVP" }]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "EventAttribute",
+        "possibleTypes": [{ "name": "EventType" }, { "name": "EventLocation" }]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "EventCalendarPrintOptions",
+        "possibleTypes": [{ "name": "Series" }]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "Content",
+        "possibleTypes": [
+          { "name": "Design" },
+          { "name": "Photo" },
+          { "name": "Document" }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "Attendee",
+        "possibleTypes": [
+          { "name": "UserAttendee" },
+          { "name": "GuestAttendee" }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "K4Invite",
+        "possibleTypes": [{ "name": "K4CodeInvite" }]
+      }
+    ]
+  }
+}

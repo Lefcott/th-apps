@@ -1,0 +1,188 @@
+.submitBtnGroup {
+  float: right;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+/* editorBtn block is in app.css */
+
+.dropdown {
+  position: relative;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 5px;
+  background-color: #f1f1f1;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+
+.dropdown-content div {
+  color: #333333;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.editorBtn--submitBtns {
+  height: 40px;
+}
+
+.editorBtn--republish {
+  background: #ffd26c;
+  border: 1px solid #b6b7b7;
+  color: #333;
+  padding: 0 12px;
+}
+
+.editorBtn--republish:hover {
+  background: #fccd76 !important;
+  border: 1px solid #b6b7b7 !important;
+  color: #333 !important;
+}
+
+/* TOASTS */
+
+.submitToasts {
+  border-radius: 15px;
+  color: #333;
+  font-size: 12px;
+  padding: 2px 10px 2px 30px;
+  position: absolute;
+  margin-top: 0.7rem;
+}
+
+.submitToasts--warn {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-name: longFadeOut;
+  animation-duration: 2s;
+  background-color: #ffedc7;
+  top: 42px;
+  right: 4px;
+}
+
+.submitToasts--save {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-name: saveFadeOut;
+  animation-duration: 8s;
+  background-color: #d2eff1;
+  right: 460px;
+  top: 0px;
+  width: 205px;
+}
+
+.submitToasts--warn span {
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  right: 345px;
+  top: 4px;
+  width: 15px;
+}
+
+.submitToasts--warn span:after {
+  color: #333;
+  content: "x";
+  position: absolute;
+  right: 4.5px;
+  top: -2px;
+}
+
+.print-toast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 25px;
+  z-index: 10;
+}
+
+.toast-loading {
+  background-color: #00838c;
+}
+.toast-error {
+  background-color: #a20202;
+}
+
+/* POPUP DOTS */
+
+.submitToasts--warn span.submitToasts--dot,
+.submitToasts--fail span.submitToasts--dot {
+  background-color: #ffcb61 !important;
+}
+.submitToasts--save span.submitToasts--dot {
+  background-color: #3fa4ab;
+}
+
+/* YOUR SAVE WAS SUCCESSFUL  */
+.submitToasts--save span {
+  border-radius: 50%;
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  top: 2.75px;
+  left: 3px;
+  width: 15px;
+}
+
+/* YOUR SAVE WAS NOT SUCCESSFULL  */
+.submitToasts--save.submitToasts--fail {
+  background-color: #ffedc7;
+}
+
+/*  WARN ANIMATION   */
+@keyframes longFadeOut {
+  0% {
+    opacity: 0;
+    position: absolute;
+    right: 4px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 4px;
+  }
+}
+
+/* SAVE ANIMATION */
+@keyframes saveFadeOut {
+  0% {
+    opacity: 0;
+    position: absolute;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #740d00;
+  }
+  100% {
+    background-color: #cc4c3b;
+  }
+}

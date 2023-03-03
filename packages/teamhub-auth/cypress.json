@@ -1,0 +1,41 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 7000,
+  "viewportWidth": 1600,
+  "viewportHeight": 990,
+  "chromeWebSecurity": false,
+  "experimentalStudio": true,
+  "experimentalSessionSupport": true,
+  "env": {
+    "PORT": 3010,
+    "SLOW": false,
+    "ENVIRONMENT": "staging",
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "production": 47783
+    },
+    "CYPRESS_BASE_URL_OPTIONS": {
+      "local": "https://teamhub-staging.k4connect.com/",
+      "staging": "https://teamhub-staging.k4connect.com/",
+      "production": "https://teamhub.k4connect.com/"
+    }
+  },
+  "SSO_AUTH_URL": {
+    "local": "https://api-staging.k4connect.com/v2/sso/auth/login",
+    "staging": "https://api-staging.k4connect.com/v2/sso/auth/login",
+    "production": "https://api.k4connect.com/v2/sso/auth/login"
+  },
+  "queryParams": {
+    "local": {
+      "communityId": 3134
+    },
+    "staging": {
+      "communityId": 3134
+    },
+    "production": {
+      "communityId": 47783
+    }
+  },
+  "projectId": "6h6wrh"
+}

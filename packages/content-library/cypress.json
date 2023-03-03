@@ -1,0 +1,42 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 15000,
+  "chromeWebSecurity": false,
+  "projectId": "61uovy",
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
+  "env": {
+    "SLOW": false,
+    "ENVIRONMENT": "staging",
+    "K4_ENV": "staging",
+    "PORT": 8081,
+    "CYPRESS_BASE_URL": {
+      "local": "https://teamhub-staging.k4connect.com/library",
+      "staging": "https://teamhub-staging.k4connect.com/library",
+      "production": "https://teamhub.k4connect.com/library"
+    },
+    "GRAPH_URL": {
+      "local": "https://api-staging.k4connect.com/v3/graph/graphql",
+      "staging": "https://api-staging.k4connect.com/v3/graph/graphql",
+      "production": "https://api.k4connect.com/v3/graph/graphql"
+    },
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "production": 47783
+    }
+  },
+  "queryParams": {
+    "local": {
+      "communityId": 3134
+    },
+    "staging": {
+      "communityId": 3134
+    },
+    "production": {
+      "communityId": 47783
+    }
+  }
+}

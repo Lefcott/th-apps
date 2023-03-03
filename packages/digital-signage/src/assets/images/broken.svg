@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="242" height="188" viewBox="0 0 242 188">
+    <defs>
+        <style>
+            .cls-1{opacity:.188}.cls-2{fill:#ffdaaa}.cls-3{fill:#ff7956}.cls-4{fill:#ffc477}.cls-5{fill:#e52d2d}.cls-6{fill:rgba(0,0,0,.87);font-size:24px;font-family:Roboto-Light,Roboto;font-weight:300;letter-spacing:.013em}
+        </style>
+    </defs>
+    <g id="Group_961" data-name="Group 961" transform="translate(-431 -474)">
+        <g id="Group_960" data-name="Group 960" transform="translate(116 -29)">
+            <ellipse id="Ellipse_25" cx="44" cy="2.5" class="cls-1" data-name="Ellipse 25" rx="44" ry="2.5" transform="translate(392 610)"/>
+            <g id="archive" transform="translate(398 503)">
+                <path id="Path_807" d="M22.583 0v22.583H0v86.567h75.275V0zm0 0" class="cls-2" data-name="Path 807"/>
+                <path id="Path_808" d="M22.583 0L0 22.583h22.583zm0 0" class="cls-3" data-name="Path 808"/>
+                <path id="Path_809" d="M0 232v54.575h48.929C21.884 286.575 0 262.164 0 232zm0 0" class="cls-4" data-name="Path 809" transform="translate(0 -177.425)"/>
+                <g id="Group_959" data-name="Group 959" transform="translate(14.599 42.826)">
+                    <path id="Path_810" d="M75.368 182.055l-5.322 5.324-5.322-5.324-2.661 2.661 5.322 5.324-5.322 5.324 2.661 2.661 5.322-5.324 5.322 5.324 2.661-2.661-5.322-5.324 5.322-5.324zm0 0" class="cls-5" data-name="Path 810" transform="translate(-62.063 -182.055)"/>
+                    <path id="Path_811" d="M184.724 198.025l5.322-5.324 5.322 5.324 2.661-2.661-5.322-5.324 5.322-5.324-2.661-2.661-5.322 5.324-5.322-5.324-2.661 2.661 5.322 5.324-5.322 5.324zm0 0" class="cls-5" data-name="Path 811" transform="translate(-153.834 -182.055)"/>
+                    <path id="Path_812" d="M90.344 296.98L93 299.641l1.749-1.749a16.96 16.96 0 0 1 23.952 0l1.749 1.749 2.661-2.661-1.749-1.749a20.724 20.724 0 0 0-29.274 0zm0 0" class="cls-5" data-name="Path 812" transform="translate(-83.691 -263.979)"/>
+                </g>
+            </g>
+        </g>
+        <text id="It_looks_like_something_has_gone_wrong." class="cls-6" data-name="It looks like something has gone wrong." transform="translate(552 628)">
+            <tspan x="-120.64" y="0">It looks like something</tspan><tspan x="-89.062" y="28">has gone wrong.</tspan>
+        </text>
+    </g>
+</svg>

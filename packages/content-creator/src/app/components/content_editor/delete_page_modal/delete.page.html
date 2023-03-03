@@ -1,0 +1,22 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title">Delete Page</h3>
+  <div
+    class="modal-close"
+    id="creator_deletePageCancel-button"
+    ng-click="$ctrl.returnToProject()"
+  >
+    <i class="fas fa-times"></i>
+  </div>
+</div>
+<div class="modal-body delete-body" id="creator_deletePageConfirm-button">
+  <h5>Are you sure you want to delete this page?</h5>
+  <h5>You will not be able to recover this page once deleted.</h5>
+</div>
+<div class="pageProperties__container--button">
+  <button
+    class="btn btn-warning button__delete"
+    ng-click="$ctrl.handleDelete()"
+  >
+    <i class="far fa-trash-alt"></i> <span>Delete Page</span>
+  </button>
+</div>

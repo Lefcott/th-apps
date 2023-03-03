@@ -1,0 +1,41 @@
+.EI_insights {
+  /* height: calc(100vh - 4rem); */
+  overflow-y: scroll;
+  background-color:#ffffff
+}
+
+.EI_insights-frame {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.EI_requestInfo {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  margin: 0 50px;
+  align-items: center;
+}
+
+.EI_requestInfo img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.EI_requestInfo-header {
+  font-size: 34px;
+  font-weight: bold;
+  color: #474848;
+}
+
+.EI_requestInfo-body {
+  line-height: 1.5;
+  color: #474848;
+  margin: 30px 0 15px;
+}
+
+.EI_requestInfo-label {
+  font-weight: bold;
+  margin: 10px 0;
+}

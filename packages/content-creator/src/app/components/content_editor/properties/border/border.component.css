@@ -1,0 +1,46 @@
+.property__border--width{
+    width:80%;
+    margin-left: 10%;
+}
+
+.property__border{
+    padding-top: 10px;
+    padding-bottom: 10%;
+    background:#ddd;
+    position: relative;
+}
+
+.property__border .property__container--color {
+    padding: 0;
+    right: 19px;
+}
+
+.property__border:before {
+    content: '';
+    position: relative;
+    height: 0px;
+    width: 0px;
+    left: 48%;
+    right: auto;
+    top: 3px;
+    bottom: auto;
+    border-style: solid;
+    border-width: 14px;
+    border-color: transparent;
+    -webkit-transform: rotate(360deg);
+    margin-left: -6px;
+    border-bottom-width: 0;
+    border-top-color: #e6e6e6;
+}
+
+.property__border i {
+    position: absolute;
+    display: flex !important;
+    right: 18px;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+    height: 40px;
+    width: 50px;
+    background: rgba(180,180,180, 0.5);
+}

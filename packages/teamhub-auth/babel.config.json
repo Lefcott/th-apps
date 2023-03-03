@@ -1,0 +1,25 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "useESModules": false,
+        "regenerator": false
+      }
+    ],
+    "@babel/plugin-proposal-optional-chaining"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": "current node"
+          }
+        ]
+      ]
+    }
+  }
+}

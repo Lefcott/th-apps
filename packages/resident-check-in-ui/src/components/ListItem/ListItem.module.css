@@ -1,0 +1,88 @@
+.listItem {
+    padding: 8px 7px 8px 15px !important;
+}
+
+.listItem-statusIcon {
+    margin: 5px 10px;
+    width: 18px;
+}
+
+.listItem-header {
+    color: #474848;
+    font-size: 18px;
+}
+
+.listItem-subLabel {
+  color: #8a9898;
+  font-size: 13px;
+}
+
+.listItem-alertLabel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.listItem__away__container {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+[src=''] {
+    display: none;
+}
+
+.statusOptOut {
+  background: rgb(229, 229, 229) !important;
+}
+
+/* *************************
+**** Selected States
+************************* */
+.statusAlert {
+    border-left: solid #e52d2d !important;
+    border-width: 0 0 0 8px !important;
+    padding: 8px 7px !important;
+}
+
+.statusNoSystem {
+    border-left: solid #6e6f70 !important;
+    border-width: 0 0 0 8px !important;
+    padding: 8px 7px !important;
+}
+
+.statusIssue {
+    border-left: solid #f0ad4e !important;
+    border-width: 0 0 0 8px !important;
+    padding: 8px 7px !important;
+}
+
+.statusOptOutActive {
+  border-left: solid #515757 !important;
+  border-width: 0 0 0 8px !important;
+  padding: 8px 7px !important;
+}
+
+
+
+.statusClear {
+  border-left: solid #6ca92a !important;
+  border-width: 0 0 0 8px !important;
+  padding: 8px 7px !important;
+}
+
+/* *************************
+**** Media queries
+************************* */
+
+@media (max-width: 960px) {
+    .statusAlert, .statusIssue, .statusClear, .statusNoSystem {
+        background-color: white !important;
+        border-left: none !important;
+        padding: 8px !important;
+    }
+    .listItem {
+      padding: 8px !important;
+    }
+}

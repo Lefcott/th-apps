@@ -1,0 +1,25 @@
+<!-- @format -->
+
+<div
+	class="image-component placeholder__container"
+	ng-dblclick="$ctrl.uploadModal()"
+>
+	<i class="fas fa-images placeholder__icon"></i>
+	<p class="placeholder__clue">
+		Double-Click to upload an image. For best results, choose a high resolution
+		.jpeg or .png image.
+	</p>
+</div>
+
+<script type="text/ng-template" id="image-upload-modal.html">
+	<div class="modal-header">
+		<h3 class="modal-title" id="modal-title">Image upload</h3>
+		<button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+	</div>
+	<div class="modal-body" id="modal-body">
+			<image-upload></image-upload>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" ng-click="$ctrl.done()">OK</button>
+	</div>
+</script>

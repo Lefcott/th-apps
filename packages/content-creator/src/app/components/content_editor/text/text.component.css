@@ -1,0 +1,115 @@
+/** @format */
+
+#toolbar {
+	position: absolute;
+	top: -50px;
+}
+
+.textbox__text {
+	min-height: 50px;
+	width: 100%;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.text {
+	cursor: pointer;
+	width: 100%;
+	height: auto;
+	min-width: 150px;
+	min-height: 150px;
+	padding-top: 10px;
+	font-family: inherit;
+	font-size: 48px;
+}
+
+.text span {
+	font-family: inherit;
+	vertical-align: top;
+}
+
+.text p {
+	width: 100%;
+	line-height: 2ex;
+	font-family: 'Open Sans';
+}
+
+.text strong {
+	font-weight: 700 !important;
+}
+
+.text strong,
+.text em,
+.text u,
+.text s {
+	font-size: inherit;
+	font-family: inherit !important;
+	line-height: initial;
+}
+
+.text p > span {
+	flex: 1;
+}
+
+.text span > span,
+.text span > span > span {
+	font-family: inherit !important;
+}
+
+.text > p:empty:before {
+	content: attr(data-placeholder);
+	color: gray;
+}
+
+.text p {
+	line-height: 1.5ex;
+	/* height: 2.5ex !important; */
+}
+
+.text p :not(span) {
+	font-family: inherit;
+}
+
+.text p > span {
+	line-height: 2ex;
+}
+
+.text span > span {
+	line-height: 2ex;
+	/* display: block; */
+}
+
+.text ol,
+.text ul {
+	font-size: 1em;
+}
+.text-box {
+	position: absolute;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	cursor: grab;
+	z-index: 10;
+	min-width: 150px;
+	min-height: 150px;
+	height: auto;
+}
+
+/* overwriting a margin-left of 40px that makes list bullets/numbers overlap textbox */
+.text-box ol,
+.text-box ul {
+	padding-left: 55px;
+}
+.text-box li {
+	line-height: 1;
+}
+
+/* cke overwrites */
+.cke_combopanel__fontsize {
+	width: 400px !important;
+}
+.cke * {
+	font-size: 15px !important;
+}
+.cke_button__source_label {
+	font-size: 20px !important;
+}

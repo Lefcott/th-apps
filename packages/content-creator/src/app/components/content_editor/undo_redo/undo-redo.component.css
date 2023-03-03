@@ -1,0 +1,67 @@
+.editor__undoredo-title {
+  margin-left: 5%;
+}
+
+.undoredo-component {
+  margin-top:5%;
+  width: 100%;
+}
+
+.undoredo-container {
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+  height: 40px;
+  margin: 3%;
+  padding: 1%;
+  z-index: 2;
+}
+/* used by icons */
+.btn-undo-redo {
+  background-color: #ddd;
+  background: linear-gradient(#f2f2f2, #e2e2e2);
+  border-bottom: 2px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
+  border-right: 2px solid #d6d6d6;
+  border-radius: 4px;
+  border-top: none;
+  height: 100%;
+  padding: 0;
+  width: 46%;
+}
+
+.btn-undo-redo img {
+  height: 75%;
+  width: 75%;
+}
+
+.btn-undo-redo:hover {
+  background: #ededed;
+}
+
+.btn-undo-redo.zoom-disable img:hover {
+  cursor: not-allowed;
+}
+
+/* end  */
+.image-zoomed-in {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 150%;
+}
+
+.image-reset {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.image-zoomed-out {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 50%;
+}

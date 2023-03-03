@@ -1,0 +1,32 @@
+<div class="ct-modal-body fill">
+  <div class="ct-modal-header">
+    Clear Content
+    <button type="button" ng-click="$ctrl.handleClose()" class="ct-modal-close">
+      <img ng-src="/assets/icons/close-x.svg" />
+    </button>
+  </div>
+  <div class="ct-modal-content-container fill">
+    <div class="ct-modal-content">
+      <h4>The content will be lost if you change the template.</h4>
+      <h4 class="ct-modal-content--bold">
+        You will not be able to recover this content once cleared.
+      </h4>
+    </div>
+    <div class="ct-modal-submitContainer">
+      <button
+        class="btn ct-modal__buttons"
+        type="button"
+        ng-click="$ctrl.handleClear()"
+      >
+        Clear Content
+      </button>
+      <button
+        class="btn ct-modal__buttons"
+        type="button"
+        ng-click="$ctrl.handleClose()"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>

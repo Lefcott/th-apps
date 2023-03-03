@@ -1,0 +1,36 @@
+{
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 7000,
+  "env": {
+    "SLOW": false,
+    "K4_ENV": "staging",
+    "PORT": 3100,
+    "ENVIRONMENT": "local",
+    "CYPRESS_BASE_URL": {
+      "local": "https://teamhub-staging.k4connect.com/building-alerts",
+      "staging": "https://teamhub-staging.k4connect.com/building-alerts",
+      "production": "https://teamhub.k4connect.com/building-alerts"
+    },
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "prod": 47783
+    }
+  },
+  "queryParams": {
+    "local": {
+      "communityId": 3134
+    },
+    "staging": {
+      "communityId": 3134
+    },
+    "prod": {
+      "communityId": 47783
+    }
+  },
+  "projectId": "6yo29k"
+}

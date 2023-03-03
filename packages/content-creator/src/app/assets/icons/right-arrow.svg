@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>right arrow</title>
+    <desc>Pagination Button Caret</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="right-arrow" fill="#5d5d5d">
+            <polygon id="triangle-right" points="22.6666667 15 7.33333333 26.5 7.33333333 3.5"></polygon>
+        </g>
+    </g>
+</svg>

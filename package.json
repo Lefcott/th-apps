@@ -1,0 +1,26 @@
+{
+  "name": "teamhub-apps",
+  "version": "1.22.17",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG_PRINT_LIMIT=10 jest --passWithNoTests",
+    "bootstrap:all": "lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4connect/teamhub-apps.git"
+  },
+  "keywords": [],
+  "author": "Zach Durham <zach.durham@k4connect.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4connect/teamhub-apps/issues"
+  },
+  "homepage": "https://github.com/k4connect/teamhub-apps#readme",
+  "devDependencies": {
+    "cypress-xpath": "^2.0.1",
+    "jest": "^27.0.6",
+    "lerna": "^4.0.0"
+  }
+}

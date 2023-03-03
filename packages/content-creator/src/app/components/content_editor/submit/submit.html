@@ -1,0 +1,48 @@
+<div class="submitBtnGroup">
+  <button id="CR_previewBtn" type="button" class="editorBtn btn editorBtn--submitBtns" ng-click="$ctrl.preview('lg')"
+    ng-disabled="!$ctrl.contentEditorService.slideShowReady || $ctrl.htmlService.disableSaveBtn">Preview</button>
+  <button id="CR_saveBtn" type="button" class="editorBtn btn editorBtn--submitBtns editorBtn--teal"
+    ng-click="$ctrl.saveTemplate('save', true)"
+    ng-disabled="$ctrl.htmlService.disableSaveBtn ||!$ctrl.contentEditorService.slideShowReady">Save</button>
+  <div id="CR_publishDropDown" class="dropdown">
+    <button id="publishButton" class="editorBtn btn editorBtn--submitBtns editorBtn--teal"
+      ng-disabled="$ctrl.htmlService.disableSaveBtn || !$ctrl.contentEditorService.slideShowReady"
+      ng-hide="$ctrl.contentEditorService.isTemplate">{{ $ctrl.buttonText }}</button>
+    <!-- /* feature flag */ content-3.0.0 toggle new dropdown flow-->
+    <div ng-show="$ctrl.isAppV3">
+      <div class="dropdown-content"
+        ng-hide="$ctrl.htmlService.disableSaveBtn || !$ctrl.contentEditorService.slideShowReady">
+        <div id="CR_publishDropdown-signage" ng-click="$ctrl.openSignage()">Publish to Digital Signage</div>
+        <div id="CR_publishDropdown-print" ng-click="$ctrl.openPrintModal()">Print</div>
+      </div>
+    </div>
+    <div ng-show="!$ctrl.isAppV3">
+      <div class="dropdown-content"
+        ng-hide="$ctrl.htmlService.disableSaveBtn || !$ctrl.contentEditorService.slideShowReady">
+        <div id="CR_publishDropdown-signage" ng-click="$ctrl.openSignage()">Publish to digital signage</div>
+        <!-- move logic into the controller itself, not hiding buttons-->
+        <div id="CR_publishDropdown-app" ng-click="$ctrl.publishToApp()">Publish to app</div>
+        <div id="CR_publishDropdown-print" ng-click="$ctrl.openPrintModal()">Print</div>
+      </div>
+    </div>
+    <!-- /* feature flag */ content-3.0.0 -->
+
+  </div>
+
+  <!-- TOASTS -->
+  <div ng-show="!$ctrl.isAppV3">
+    <div class="submitToasts submitToasts--warn" ng-show="$ctrl.htmlService.publish.warn"
+      ng-click="$ctrl.dismissWarn()">
+      <span class="submitToasts--dot"></span>This document has been modified. Don’t forget to publish.
+    </div>
+  </div>
+  <div class="submitToasts submitToasts--save submitToasts--success" ng-show="$ctrl.htmlService.publish.save">
+    <span class="submitToasts--dot"></span>Saved at {{$ctrl.htmlService.timeStampForPopup | date:'h:mma'}}
+  </div>
+  <div class="submitToasts submitToasts--save submitToasts--fail" ng-show="$ctrl.htmlService.publish.fail">
+    <span class="submitToasts--dot"></span>Your save was not successful.
+  </div>
+  <div class="print-toast toast-loading" ng-show="$ctrl.printLoading">Your design is being prepared for print</div>
+  <div class="print-toast toast-error" ng-show="$ctrl.printError">There was a problem processing your design for print
+  </div>
+</div>

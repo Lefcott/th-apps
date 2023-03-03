@@ -1,0 +1,13 @@
+.image-component {
+	width: 100%;
+	height: 100%;
+	background-color: #9a9a9a;
+	overflow: hidden;
+}
+.placeholder__clue {
+    font-size: 1.35em;
+    width: 75%;
+    max-width: 350px;
+	color: rgba(250,250,250,.8);
+	line-height: 1.2em;
+}

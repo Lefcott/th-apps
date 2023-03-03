@@ -1,0 +1,11 @@
+<button class="pageReorder__container" id="CR_ReOrder-button" ng-click="$ctrl.openPopup()" class="editorBtn btn editorBtn--pageReorder" ng-disabled="$ctrl.disableReorder()">Re-order
+</button>
+<div class="pageReorder__popup" ng-show="$ctrl.contentEditorService.reorderPopup" class="row">
+  <div>
+    <p class="pageReorder__popup--text">Move to Slide: </p>
+    <form name="reorderForm" ng-submit="$ctrl.saveReorder($ctrl.pageMover)" class="pageReorder__popup--form">
+      <input name="$ctrl.pageMover" id="CR_ReOrder-slideNum-input" ng-model="$ctrl.pageMover" ng-pattern="/^[0-9]*$/" ng-maxlength="3" placeholder="#" ng-required="true"></input>
+      <button type="submit" id="CR_ReOrder-move-btn" ng-disabled="reorderForm.$invalid" class="editorBtn btn editorBtn--pageReorderSave">Move</button>
+    </form>
+  </div>
+</div>

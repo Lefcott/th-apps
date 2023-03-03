@@ -1,0 +1,5 @@
+<div class="shape unrestricted">
+		<svg viewBox="0 0 200 200" fill="green">
+				<circle cx="100" cy="100" r="100" />
+		</svg>
+</div>

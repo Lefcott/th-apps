@@ -1,0 +1,17 @@
+<div class="page__controls">
+    <div class="page__control-section">
+    <div class="controls page__arrows">
+        <button class="navigate-left enabled" aria-label="previous slide" ng-click="$ctrl.prev()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="page__numbers">{{$ctrl.contentEditorService.currentSlideNumber}}/{{$ctrl.contentEditorService.totalSlideNumber}}</div>
+        <button class="navigate-right enabled" aria-label="next slide" ng-click="$ctrl.next()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    </div>
+
+    <div class="page__control-section">
+    <page-order-component></page-order-component>
+    </div>
+</div>

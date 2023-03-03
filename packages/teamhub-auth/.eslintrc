@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "react-important-stuff",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "babel-eslint",
+  "globals": {
+    "process": true
+  },
+  "rules": {
+    "no-console": "warn",
+    "quotes": [
+      1,
+      "single"
+    ]
+  }
+}

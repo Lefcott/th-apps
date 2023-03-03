@@ -1,0 +1,19 @@
+<div id='calendarTooltip'>
+	<label class="property__label" for="calendar-picker">Calendar</label>
+	<i class="fa fa-info-circle" id='info-icon'></i>
+</div>
+
+<label id='calendarLabel' class="property__label" for="calendar-picker">Calendar</label>
+<div class="editor__tile-checkmark">
+	<label class="checkmark__container container">
+		<span class="checkbox__label">All Events</span>
+		<input name="event-allcalendars" type="checkbox" ng-checked="$ctrl.isAllSelected" ng-click="$ctrl.selectAll()" ng-disabled="$ctrl.isAllSelected" class="checkbox">
+		<span class="checkmark" ng-class="{ 'button-disabled' : $ctrl.isAllSelected } "></span>
+	</label>
+
+	<label ng-repeat="calendar in $ctrl.calendarList" class="checkmark__container container">
+		<span class="checkbox__label">{{calendar.calendarName}}</span>
+		<input name="event-calendarlist" type="checkbox" ng-checked="$ctrl.isSelected(calendar)" ng-disabled="$ctrl.isDisabled(calendar)" ng-click="$ctrl.toggleCheck(calendar)" class="checkbox">
+		<span class="checkmark"></span>
+	</label>
+</div>

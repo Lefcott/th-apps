@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1193" height="772" viewBox="0 0 1193 772">
+    <defs>
+        <path id="a" d="M1021.265 635.345H1193V772h-171.735V635.345z"/>
+        <mask id="K" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path id="b" d="M851.562 635.345h171.735V772H851.562V635.345z"/>
+        <mask id="L" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#b"/>
+        </mask>
+        <path id="c" d="M681.86 635.345h171.735V772H681.859V635.345z"/>
+        <mask id="M" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#c"/>
+        </mask>
+        <path id="d" d="M511.14 635.345h171.736V772H511.14V635.345z"/>
+        <mask id="N" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#d"/>
+        </mask>
+        <path id="e" d="M341.438 635.345h171.735V772H341.438V635.345z"/>
+        <mask id="O" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#e"/>
+        </mask>
+        <path id="f" d="M170.719 635.345h171.735V772H170.719V635.345z"/>
+        <mask id="P" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#f"/>
+        </mask>
+        <path id="g" d="M0 635.345h171.735V772H0V635.345z"/>
+        <mask id="Q" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#g"/>
+        </mask>
+        <path id="h" d="M1021.265 499.71H1193v136.655h-171.735V499.709z"/>
+        <mask id="R" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#h"/>
+        </mask>
+        <path id="i" d="M851.562 499.71h171.735v136.655H851.562V499.709z"/>
+        <mask id="S" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#i"/>
+        </mask>
+        <path id="j" d="M681.86 499.71h171.735v136.655H681.859V499.709z"/>
+        <mask id="T" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#j"/>
+        </mask>
+        <path id="k" d="M511.14 499.71h171.736v136.655H511.14V499.709z"/>
+        <mask id="U" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#k"/>
+        </mask>
+        <path id="l" d="M341.438 499.71h171.735v136.655H341.438V499.709z"/>
+        <mask id="V" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#l"/>
+        </mask>
+        <path id="m" d="M170.719 499.71h171.735v136.655H170.719V499.709z"/>
+        <mask id="W" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#m"/>
+        </mask>
+        <path id="n" d="M0 499.71h171.735v136.655H0V499.709z"/>
+        <mask id="X" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#n"/>
+        </mask>
+        <path id="o" d="M1021.265 365.094H1193v136.655h-171.735V365.094z"/>
+        <mask id="Y" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#o"/>
+        </mask>
+        <path id="p" d="M851.562 365.094h171.735v136.655H851.562V365.094z"/>
+        <mask id="Z" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#p"/>
+        </mask>
+        <path id="q" d="M681.86 365.094h171.735v136.655H681.859V365.094z"/>
+        <mask id="aa" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#q"/>
+        </mask>
+        <path id="r" d="M511.14 365.094h171.736v136.655H511.14V365.094z"/>
+        <mask id="ab" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#r"/>
+        </mask>
+        <path id="s" d="M341.438 365.094h171.735v136.655H341.438V365.094z"/>
+        <mask id="ac" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#s"/>
+        </mask>
+        <path id="t" d="M170.719 365.094h171.735v136.655H170.719V365.094z"/>
+        <mask id="ad" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#t"/>
+        </mask>
+        <path id="u" d="M0 365.094h171.735v136.655H0V365.094z"/>
+        <mask id="ae" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#u"/>
+        </mask>
+        <path id="v" d="M1021.265 230.478H1193v136.655h-171.735V230.478z"/>
+        <mask id="af" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#v"/>
+        </mask>
+        <path id="w" d="M851.562 230.478h171.735v136.655H851.562V230.478z"/>
+        <mask id="ag" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#w"/>
+        </mask>
+        <path id="x" d="M681.86 230.478h171.735v136.655H681.859V230.478z"/>
+        <mask id="ah" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#x"/>
+        </mask>
+        <path id="y" d="M511.14 230.478h171.736v136.655H511.14V230.478z"/>
+        <mask id="ai" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#y"/>
+        </mask>
+        <path id="z" d="M341.438 230.478h171.735v136.655H341.438V230.478z"/>
+        <mask id="aj" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#z"/>
+        </mask>
+        <path id="A" d="M170.719 230.478h171.735v136.655H170.719V230.478z"/>
+        <mask id="ak" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#A"/>
+        </mask>
+        <path id="B" d="M0 230.478h171.735v136.655H0V230.478z"/>
+        <mask id="al" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#B"/>
+        </mask>
+        <path id="C" d="M1021.265 95.863H1193v136.655h-171.735V95.863z"/>
+        <mask id="am" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#C"/>
+        </mask>
+        <path id="D" d="M851.562 95.863h171.735v136.655H851.562V95.863z"/>
+        <mask id="an" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#D"/>
+        </mask>
+        <path id="E" d="M681.86 95.863h171.735v136.655H681.859V95.863z"/>
+        <mask id="ao" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#E"/>
+        </mask>
+        <path id="F" d="M511.14 95.863h171.736v136.655H511.14V95.863z"/>
+        <mask id="ap" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#F"/>
+        </mask>
+        <path id="G" d="M0 0h1193v98H0V0z"/>
+        <mask id="aq" width="1193" height="98" x="0" y="0" fill="#fff">
+            <use xlink:href="#G"/>
+        </mask>
+        <path id="H" d="M341.438 95.863h171.735v136.655H341.438V95.863z"/>
+        <mask id="ar" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#H"/>
+        </mask>
+        <path id="I" d="M170.719 95.863h171.735v136.655H170.719V95.863z"/>
+        <mask id="as" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#I"/>
+        </mask>
+        <path id="J" d="M0 95.863h171.735v136.655H0V95.863z"/>
+        <mask id="at" width="171.735" height="136.655" x="0" y="0" fill="#fff">
+            <use xlink:href="#J"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#K)" xlink:href="#a"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#L)" xlink:href="#b"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#M)" xlink:href="#c"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#N)" xlink:href="#d"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#O)" xlink:href="#e"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#P)" xlink:href="#f"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#Q)" xlink:href="#g"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#R)" xlink:href="#h"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#S)" xlink:href="#i"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#T)" xlink:href="#j"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#U)" xlink:href="#k"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#V)" xlink:href="#l"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#W)" xlink:href="#m"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#X)" xlink:href="#n"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#Y)" xlink:href="#o"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#Z)" xlink:href="#p"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#aa)" xlink:href="#q"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ab)" xlink:href="#r"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ac)" xlink:href="#s"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ad)" xlink:href="#t"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ae)" xlink:href="#u"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#af)" xlink:href="#v"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ag)" xlink:href="#w"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ah)" xlink:href="#x"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ai)" xlink:href="#y"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#aj)" xlink:href="#z"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ak)" xlink:href="#A"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#al)" xlink:href="#B"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#am)" xlink:href="#C"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#an)" xlink:href="#D"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ao)" xlink:href="#E"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ap)" xlink:href="#F"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="6,6,6,6" stroke-width="2" mask="url(#aq)" xlink:href="#G"/>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="57.381" y="86">Sunday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="224.028" y="86">Monday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="393.549" y="86">Tuesday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="551.02" y="86">Wednesday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="730.108" y="86">Thursday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="912.762" y="86">Friday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="16" font-weight="bold">
+            <tspan x="1071.987" y="86">Saturday</tspan>
+        </text>
+        <text fill="#000" font-family="OpenSans-Bold, Open Sans" font-size="39" font-weight="bold">
+            <tspan x="456.668" y="56">[Month Name]</tspan>
+        </text>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#ar)" xlink:href="#H"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#as)" xlink:href="#I"/>
+        <use fill="#E5E5E5" stroke="#979797" stroke-dasharray="5,5,5,5" stroke-width="2" mask="url(#at)" xlink:href="#J"/>
+        <g fill="#CCCCCD">
+            <path d="M183.507 254.626h24.558v12h-24.558zM215.507 254.626h96v12h-96zM215.507 272.626h57.302v12h-57.302zM529.67 389.051h24.559v12H529.67zM561.67 389.051h96v12h-96zM561.67 407.051h57.303v12H561.67z"/>
+            <g>
+                <path d="M866.25 254.626h24.558v12H866.25zM898.25 254.626h96v12h-96zM898.25 272.626h57.302v12H898.25z"/>
+            </g>
+            <g>
+                <path d="M353.752 520.371h24.558v12h-24.558zM385.752 520.371h96v12h-96zM385.752 538.371h57.302v12h-57.302z"/>
+            </g>
+            <g>
+                <path d="M353.752 563.86h24.558v12h-24.558zM385.752 563.86h96v12h-96zM385.752 581.86h57.302v12h-57.302z"/>
+            </g>
+        </g>
+    </g>
+</svg>

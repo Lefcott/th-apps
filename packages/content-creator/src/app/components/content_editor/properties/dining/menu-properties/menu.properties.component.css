@@ -1,0 +1,10 @@
+/** @format */
+.menu-property-label {
+	color: #000 !important;
+	font-weight: 700 !important;
+	line-height: 15px;
+}
+
+.menu-property-label > p {
+	width: 100px;
+}

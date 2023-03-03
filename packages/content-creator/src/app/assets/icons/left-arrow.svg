@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>left arrow</title>
+    <desc>Pagination Button Caret</desc>
+    <defs>
+        <polygon id="path-1" points="7.33333333 15 22.6666667 3.5 22.6666667 26.5"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="left-arrow">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="triangle-left" fill="#5d5d5d" transform="translate(15.000000, 15.000000) scale(1, -1) translate(-15.000000, -15.000000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

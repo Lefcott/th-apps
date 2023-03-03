@@ -1,0 +1,9 @@
+/**
+ * /* Dropdown menutitem-danger or red color
+ *
+ * @format
+ */
+
+.RM_menuItem-red {
+  color: #d93838 !important;
+}

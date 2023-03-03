@@ -1,0 +1,8 @@
+
+.rc-swipeout {
+  overflow: inherit !important;
+}
+
+.rc-swipeout-btn-text {
+  padding: 0 5px !important;
+}

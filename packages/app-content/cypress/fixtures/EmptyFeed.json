@@ -1,0 +1,20 @@
+{
+  "result": {
+    "data": {
+      "community": {
+        "feed": {
+          "posts": [],
+          "pageInfo": {
+            "currentPage": 0,
+            "total": 0,
+            "hasNextPage": 0,
+            "lastPage": 0,
+            "__typename": "PageInfo"
+          },
+          "__typename": "FeedPayload"
+        },
+        "__typename": "Community"
+      }
+    }
+  }
+}

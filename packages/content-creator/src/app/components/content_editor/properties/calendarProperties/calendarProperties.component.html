@@ -1,0 +1,22 @@
+<label class="property__label" for="calendar-opacity-custom-handle">Opacity</label>
+	<div class="slider" id="calendar-opacity-slider">
+		<div id="calendar-opacity-custom-handle" class="ui-slider-handle slider__handle"></div>
+	</div>
+  <div class="slider__fake">
+		<div id="calendar-opacity-text" class="slider__text"></div>
+	</div>
+	
+
+<label class="property__label">Display</label>
+<label ng-show="option.val !== 'locationkey' && option.val !== 'eventtypekey'" ng-repeat="option in $ctrl.calendarOptions" class="checkmark__container container">
+	<span class="checkbox__label">{{option.name}}</span>
+	<input name="event-calendarlist" type="checkbox" ng-checked="option.status" ng-click="$ctrl.toggleCheck(option)" ng-disabled="option.disabled" class="checkbox">
+	<span class="checkmark" ng-class="{ 'button-disabled' : option.disabled } "></span>
+</label>
+
+<label class="property__label">Keys</label>
+<label ng-hide="option.val !== 'locationkey' && option.val !== 'eventtypekey'" ng-repeat="option in $ctrl.calendarOptions" class="checkmark__container container">
+	<span class="checkbox__label">{{option.name}}</span>
+	<input name="event-calendarlist" type="checkbox" ng-checked="option.status" ng-click="$ctrl.toggleCheck(option)" class="checkbox">
+	<span class="checkmark"></span>
+</label>

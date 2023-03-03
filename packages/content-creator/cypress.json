@@ -1,0 +1,66 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 7000,
+  "chromeWebSecurity": false,
+  "PORT": 9001,
+  "viewportWidth": 1600,
+  "viewportHeight": 990,
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
+  "env": {
+    "SLOW": false,
+    "ENVIRONMENT": "staging",
+    "GRAPH_URL": {
+      "local": "https://api-staging.k4connect.com/v3/graph/graphql",
+      "staging": "https://api-staging.k4connect.com/v3/graph/graphql",
+      "production": "https://api.k4connect.com/v3/graph/graphql"
+    },
+    "CYPRESS_BASE_URL": {
+      "local": "https://teamhub-staging.k4connect.com/creator",
+      "staging": "https://teamhub-staging.k4connect.com/creator",
+      "production": "https://teamhub.k4connect.com/creator"
+    },
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "prod": 47783
+    }
+  },
+  "queryParams": {
+    "local": {
+      "editorRole": "Editor",
+      "user": "378aaa4c-220f-4f1e-9b2a-6ec77e8d34c7",
+      "communityId": 3134,
+      "communityName": "DO%20NOT%20USE%20-%20Automated%20Dashboard%20Test",
+      "type": "Design",
+      "documentName": "new design",
+      "orientation": "digital-landscape",
+      "documentId": "acf53a8d-0d6a-4615-8476-6596b38d0bea",
+      "template": false
+    },
+    "staging": {
+      "editorRole": "Editor",
+      "user": "378aaa4c-220f-4f1e-9b2a-6ec77e8d34c7",
+      "communityId": 3134,
+      "communityName": "DO%20NOT%20USE%20-%20Automated%20Dashboard%20Test",
+      "type": "Design",
+      "documentName": "new design",
+      "orientation": "digital-landscape",
+      "documentId": "acf53a8d-0d6a-4615-8476-6596b38d0bea",
+      "template": false
+    },
+    "prod": {
+      "communityId": 47783,
+      "user": "443dd2d1-b9d7-4e9a-b239-9f1614920bef",
+      "type": "slideshow",
+      "documentName": "new",
+      "documentId": "acf53a8d-0d6a-4615-8476-6596b38d0bea",
+      "editorRole": "Editor",
+      "orientation": "Digital-Landscape",
+      "communityName": "K4%20Automated%20Tests"
+    }
+  },
+  "projectId": "6qw4hq"
+}

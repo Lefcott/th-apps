@@ -1,0 +1,95 @@
+#ui-datepicker-div {
+	z-index: 110 !important;
+}
+
+.property__controls input {
+	width: 89%;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.hover {
+	background-color: #3fa4ab !important;
+	color: #ffffff !important;
+}
+
+.ui-datepicker-calendar, .ui-datepicker-year {
+	display: none;
+}
+
+.ui-datepicker select.ui-datepicker-month{
+	width: 90%;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    text-align: left;
+}
+
+.ui-datepicker-title {
+    background: white;
+	border-radius: 1px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal;
+	color: #000;
+}
+
+.daily-calendar-radio {
+	margin: 5px 0 -8px 20px;
+	min-height: 65px;
+}
+
+.choose-date-radio {
+	margin-top: 7px;
+}
+
+.radio-label {
+	font-weight: 500;
+}
+
+.draft-events-checkbox {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+[data-tip] {
+	position: relative;
+}
+
+[data-tip]:before {
+	content: '';
+	display: none;
+}
+
+[data-tip]:after {
+	display: none;
+	content: attr(data-tip);
+	position: absolute;
+	right: 20px;
+	bottom: 26px;
+	padding: 5px;
+	background: #5e5e5e;
+	color: #fff;
+	z-index: 9;
+	font-size: 0.75em;
+	line-height: 18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display: block;
+}
+
+#cal-icon {
+	position: relative;
+	right: 25px;
+	font-size: 16px !important;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+#info-icon {
+	font-size: 12px !important;
+}

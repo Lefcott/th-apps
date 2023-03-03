@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="247px" viewBox="0 0 303 247" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Events-Daily" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-128.000000, -280.000000)">
+        <g id="Group" transform="translate(128.000000, 280.000000)" fill="#979797">
+            <path d="M17,17 L17,230 L286,230 L286,17 L17,17 Z M0,0 L303,0 L303,247 L0,247 L0,0 Z" id="Rectangle" fill-rule="nonzero"></path>
+            <path d="M38,38 L266,38 L266,212 L248.976613,212 L227.988088,192.968889 L210.487553,133 L188.711417,95.0325367 L169.929933,153.281103 L113.040212,171.655799 L74.3217931,212 L38,212 L38,38 Z M103.712438,115 C119.728696,115 132.712438,102.016258 132.712438,86 C132.712438,69.9837423 119.728696,57 103.712438,57 C87.6961802,57 74.712438,69.9837423 74.712438,86 C74.712438,102.016258 87.6961802,115 103.712438,115 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

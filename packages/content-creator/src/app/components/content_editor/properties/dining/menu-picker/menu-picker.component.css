@@ -1,0 +1,10 @@
+/** @format */
+
+.dropdown {
+	float: none;
+	margin: 0 1rem;
+}
+
+.dropdown-toggle {
+	width: 100%;
+}

@@ -1,0 +1,42 @@
+<div
+  id="content-creator"
+  tabindex="0"
+  ng-controller="globalController as global"
+  ng-mousedown="global.clearMenu($event)"
+>
+  <load-styles />
+  <load-scripts />
+
+  <!-- <script type="systemjs-importmap">
+    {
+      "@teamhub/content-creator-parcels": "https://localhost:9001/teamhub-content-creator-parcels.js"
+    }
+  </script> -->
+
+  <div class="container-fluid no-gutter editor__container">
+    <action-bar-component></action-bar-component>
+    <div class="editor__main">
+      <div class="portal__container" id="portal-wrapper">
+        <portal-component></portal-component>
+      </div>
+      <div class="editor__column">
+        <div class="editor__scroll">
+          <div class="editor__wrapper">
+            <zoom-component></zoom-component>
+            <editor-toolbox></editor-toolbox>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="editor__pagecontrols" ng-hide="$ctrl.contentEditorService.isTemplate">
+    <page-add-component></page-add-component>
+      <page-controls-component></page-controls-component>
+  </div>
+
+  <div class="editor__pageremove" ng-hide="$ctrl.contentEditorService.isTemplate">
+    <page-remove-component></page-remove-component>
+  </div>
+  </div>
+
+</div>

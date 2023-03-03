@@ -1,0 +1,7 @@
+.button__delete {
+  background-color: #d35039 !important;
+}
+
+.button__delete span {
+  margin-left: 0.5rem;
+}

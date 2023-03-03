@@ -1,0 +1,40 @@
+<!-- @format -->
+
+<div class="mt-1">
+	<label id="restaurantLabel" class="property__label" for="restaurant-picker"
+		>Header</label
+	>
+	<label class="checkmark__container container">
+		<span class="checkbox__label menu-property-label">Logo</span>
+		<input
+			ng-model="showLogo"
+			ng-click="$ctrl.onToggle('showLogo')"
+			class="checkbox"
+			type="checkbox"
+			ng-checked="$ctrl.isToggled('showLogo')"
+		/>
+		<span class="checkmark"></span>
+	</label>
+	<label class="checkmark__container container">
+		<span class="checkbox__label menu-property-label">Restaurant</span>
+		<input
+			ng-model="showRestaurant"
+			ng-click="$ctrl.onToggle('showRestaurant')"
+			class="checkbox"
+			type="checkbox"
+			ng-checked="$ctrl.isToggled('showRestaurant')"
+		/>
+		<span class="checkmark"></span>
+	</label>
+	<label class="checkmark__container container">
+		<span class="checkbox__label menu-property-label">Menu</span>
+		<input
+			ng-model="showMenu"
+			ng-click="$ctrl.onToggle('showMenu')"
+			class="checkbox"
+			type="checkbox"
+			ng-checked="$ctrl.isToggled('showMenu')"
+		/>
+		<span class="checkmark"></span>
+	</label>
+</div>

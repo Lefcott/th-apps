@@ -1,0 +1,7 @@
+/** @format */
+
+.container {
+  height: 100%;
+  height: fill-available;
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+}

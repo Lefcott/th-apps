@@ -1,0 +1,68 @@
+.pageReorder__container {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  border: 0;
+  color: white;
+  font-size: 1.3em;
+  border-radius: 1px;
+  background: rgba(221, 221, 221, .3);
+  height: 75%;
+  margin: 8%;
+  cursor: pointer;
+}
+
+.editorBtn--pageReorder {
+  margin: 0 15px 0 30px;
+  position: relative;
+}
+
+.pageReorder__popup {
+  border-radius: 1px;
+  background-color: #fff;
+  border: solid 1px #979797;
+  padding: 10px 0;
+  position: absolute;
+  top: -65px;
+  left: 0px;
+  width: 100%;
+}
+.pageReorder__popup--text {
+  display: inline;
+}
+.pageReorder__popup--form {
+  display: inline;
+}
+.pageReorder__popup--text,
+.pageReorder__popup input,
+.pageReorder__popup button {
+  font-size: 1em;
+}
+
+.pageReorder__popup input,
+.pageReorder__popup button {
+  margin: 0 10px;
+}
+
+.pageReorder__popup input {
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  height: 32px;
+  padding: 5px;
+  width: 57px;
+}
+
+.editorBtn--pageReorderSave {
+  float: right;
+  min-width: auto;
+}
+
+.pageReorder__popup input.ng-invalid.ng-touched {
+  background-color: rgba(255, 224, 204, 1);
+}
+
+.pageReorder__popup input.ng-valid.ng-touched {
+  background-color: rgba(200, 235, 237, 1);
+}

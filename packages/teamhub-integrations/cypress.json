@@ -1,0 +1,31 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 7000,
+  "viewportWidth": 1600,
+  "viewportHeight": 990,
+  "chromeWebSecurity": false,
+  "experimentalStudio": true,
+  "env": {
+    "PORT": 3020,
+    "SLOW": false,
+    "ENVIRONMENT": "staging",
+    "CYPRESS_BASE_URL": "http://teamhub-staging.k4connect.com/integrations",
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "prod": 47783
+    }
+  },
+  "queryParams": {
+    "local": {
+      "communityId": 3134
+    },
+    "staging": {
+      "communityId": 3134
+    },
+    "prod": {
+      "communityId": 47783
+    }
+  },
+  "projectId": "i1j5tu"
+}

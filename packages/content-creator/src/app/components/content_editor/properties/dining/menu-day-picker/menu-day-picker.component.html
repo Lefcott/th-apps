@@ -1,0 +1,35 @@
+<!-- @format -->
+
+<div class="mt-1">
+	<label id="menu-dayLabel" class="property__label" for="menu-day-picker"
+		>Day</label
+	>
+	<div class="dropdown">
+		<button
+			class="btn btn-default dropdown-toggle cc-dropdown-toggle"
+			type="button"
+			id="menu-day-picker"
+			data-toggle="dropdown"
+			aria-haspopup="true"
+			aria-expanded="true"
+		>
+			<span class="cc-dropdown-toggle-text">
+				{{ $ctrl.getDateByDay($ctrl.menuDay).text }}
+			</span>
+			<span>
+				<i class="far fa-calendar"></i>
+			</span>
+		</button>
+		<ul
+			class="dropdown-menu cc-dropdown-menu"
+			aria-labelledby="menu-day-picker"
+		>
+			<li class="cc-dropdown-menu-item">
+				<a ng-click="$ctrl.onSelect(null)" href="#">Today's date</a>
+			</li>
+			<li class="cc-dropdown-menu-item" ng-repeat="day in data.days">
+				<a ng-click="$ctrl.onSelect(day.value)" href="#">{{ day.text }}</a>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,36 @@
+.backToTopButton {
+  border-radius: 50px !important;
+  position: absolute !important;
+  margin: 0 0 20px 0 !important;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.backToTopButton:focus {
+  outline: none;
+}
+
+.listWrapper {
+  background-color: rgb(229, 229, 229);
+  border: 1px solid #e3e5e5;
+  border-bottom: 0;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.virtuosoItem {
+  margin: 8px 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .backToTopButton {
+    position: fixed !important;
+  }
+}

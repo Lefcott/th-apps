@@ -1,0 +1,42 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Page Properties</h3>
+    <div class="modal-close" ng-click="$ctrl.close()">
+        <i class="fas fa-times"></i>
+    </div>
+
+</div>
+<div class="modal-body pageProperties__container">
+    <div ng-class="$ctrl.contentEditorService.urlParams.template ? 'slide__details-template' : 'slide__details'">
+        <div ng-hide="$ctrl.contentEditorService.urlParams.template">
+            <page-duration-component></page-duration-component>
+        </div>
+        <div class="pageProperties__container-background-color">
+            <div ng-hide="$ctrl.contentEditorService.lockStyle">
+                <background-color-picker></background-color-picker>
+            </div>
+        </div>
+    </div>
+
+    <div class="background__image" ng-hide="$ctrl.contentEditorService.lockStyle">
+        <label>Background Image</label>
+
+        <div class="background__upload" ng-click="$ctrl.addBackgroundImage()">
+            <i class="fas fa-upload"></i>
+            <div>Upload an image.</div>
+            <div>The recommended size {{$ctrl.dimensions}} pixels.</div>
+            <div>Only .jpeg and .png file formats are accepted.</div>
+        </div>
+    </div>
+
+    <div class="pageProperties__checkmarks-container" ng-hide="!$ctrl.contentEditorService.isTemplate">
+        <resize-control-component></resize-control-component>
+        <drag-control-component></drag-control-component>
+        <control-style-component></control-style-component>
+        <content-control-component></content-control-component>
+    </div>
+</div>
+
+
+<div class="pageProperties__container--button">
+    <button class="btn pageProperties__button" type="button" ng-click="$ctrl.close()">Save</button>
+</div>

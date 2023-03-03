@@ -1,0 +1,27 @@
+
+# dependencies
+node_modules
+
+# testing
+npm-debug.log
+dist
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.vscode
+.jshintrc
+.eslintrc
+
+# cypress recordings
+cypress/screenshots
+cypress/videos
+
+
+yarn-error.log
+.env
+
+docs

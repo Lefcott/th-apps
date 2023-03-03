@@ -1,0 +1,25 @@
+<div class='date-tool'>
+	<label class="property__label" for="date-picker">{{$ctrl.contentEditorService.dateLabel}}</label>
+	<div class='daily-calendar-radio' hidden>
+		<div id='tooltip'>
+			<input type='radio' name='date-radio' value='auto' id='auto-update-radio' ng-model='value' ng-change='$ctrl.radioOnChange(value)'>
+			<label class='radio-label' for='auto-update-radio'>Today's events</label>
+			<i class="fa fa-info-circle" id='info-icon'></i>
+		</div>
+		<div class='choose-date-radio'>
+			<input type='radio' name='date-radio' value='manual' id='choose-date-radio' ng-model='value' ng-change='$ctrl.radioOnChange(value)'>
+			<label class='radio-label' for='choose-date-radio'>Choose a date</label>
+		</div>
+	</div>
+	<div class="property__controls">
+		<input name="event-datepicker" type="text" id="datepicker">
+		<i class="far fa-calendar-alt" id='cal-icon'></i>
+	</div>
+	<div class="draft-events-checkbox">
+		<label class="checkmark__container container">
+			<span class="checkbox__label">Include draft events</span>
+			<input name="draft-events" type="checkbox" ng-checked="$ctrl.isDraftChecked()" ng-click="$ctrl.onDraftClick()" class="checkbox">
+			<span class="checkmark"></span>
+		</label>
+	</div>
+</div>

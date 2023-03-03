@@ -1,0 +1,32 @@
+/*====================================================
+// BRAND FONTS
+=====================================================*/
+/* typography.com fonts */
+@import url("https://editor.k4connect.com/fonts/typography.css");
+
+/* utopia */
+
+@import url("https://p.typekit.net/p.css?s=1&k=zhg5lwf&ht=tk&f=13378.13379.13380.13381&a=8061820&app=typekit&e=css");
+@font-face {
+  font-family:"Utopia Std";
+  src: url("utopia/Utopia-Regular.ttf") format("truetype");
+  font-style: normal;
+};
+
+/* frutiger */
+ @font-face{
+    font-family:"Frutiger";
+    src:url("frutiger/f8bbb037-530d-4e04-a651-4134f7031164.eot?#iefix");
+    src:url("frutiger/f8bbb037-530d-4e04-a651-4134f7031164.eot?#iefix") format("eot"),
+        url("frutiger/f5a95cb0-6d5b-4eb4-b6a3-a529d5ccde25.woff2") format("woff2"),
+        url("frutiger/01f463dc-dba9-419f-9c9f-80ac2ee9f427.woff") format("woff"),
+        url("frutiger/ba125970-2d75-413e-a466-324153755f20.ttf") format("truetype");
+  }
+  @font-face{
+    font-family:"Frutiger";
+    src:url("frutiger/fe232554-5489-4874-bb45-bd966c8c5932.eot?#iefix");
+    src:url("frutiger/fe232554-5489-4874-bb45-bd966c8c5932.eot?#iefix") format("eot"),
+        url("frutiger/0811514e-6660-4043-92c1-23d0b8caaa2f.woff2") format("woff2"),
+        url("frutiger/aeae8cac-ba4d-40d2-bbcf-936f2c7dcfe6.woff") format("woff"),
+        url("frutiger/caedf2e6-fbef-4928-b08e-1f975981ae8d.ttf") format("truetype");
+  }

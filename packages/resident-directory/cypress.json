@@ -1,0 +1,40 @@
+{
+  "integrationFolder": "cypress/integration/specs",
+  "defaultCommandTimeout": 7000,
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  },
+  "chromeWebSecurity": false,
+  "viewportWidth": 1600,
+  "viewportHeight": 990,
+  "experimentalStudio": true,
+  "env": {
+    "SLOW": false,
+    "ENVIRONMENT": "local",
+    "K4_ENV": "staging",
+    "PORT": "3007",
+    "CYPRESS_BASE_URL": {
+      "local": "https://teamhub-staging.k4connect.com/directory",
+      "staging": "https://teamhub-staging.k4connect.com/directory",
+      "production": "https://teamhub.k4connect.com/directory"
+    },
+    "communityId": {
+      "local": 3134,
+      "staging": 3134,
+      "prod": 47783
+    }
+  },
+  "queryParams": {
+    "local": {
+      "communityId": 3134
+    },
+    "staging": {
+      "communityId": 3134
+    },
+    "prod": {
+      "communityId": 47783
+    }
+  },
+  "projectId": "uiidhh"
+}

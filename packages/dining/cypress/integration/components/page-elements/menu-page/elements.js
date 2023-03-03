@@ -1,0 +1,40 @@
+/** @format */
+export default {
+  newMenuBtn: '#AM_new-menu-Btn',
+  menuImage: '#undefined-img',
+  menuPageText: 'p[class="MuiTypography-root MuiTypography-body1"]',
+  menuSetupHeadertext: '#DN_Restaurants-SetupText',
+  menuPanelCancelBtn: '#MD_menu-cancel-Btn',
+  menuSaveBtn: '#MD_menu-save-Btn',
+  menuPanelConfirmCancelBtn: '#DD_confirm-cancel-Btn',
+  menuGoBackBtn: '#DD_go-Back-Btn',
+  deleteMenuBtn: '#MD_Menu-delete-Btn',
+  deleteConfirmBtn: '#MD_confrim-Delete-menu-Btn',
+  deleteConfirmCancelBtn: '#MD-Delete-Cencel-menu-Btn',
+  deleteMenuConfirmationText: 'h2[class="MuiTypography-root MuiTypography-h6"]',
+  secondMenuBtn:
+    '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary',
+  calendarIcon: '#MD_Calandar-Icon',
+  startDate: '#MD-Calander-startdate',
+  calanderOkBtn: '.MuiDialogActions-root > :nth-child(2) > .MuiButton-label',
+  menuEditIcon: '.MuiIconButton-label >.svg-inline--fa',
+  newMenuSetup: {
+    restaurantName:'#DN_restaurant-selector-select',
+    selectRestaurantName:'[id^=DN_restaurant-selector-option]',
+    menuName: '#MD_Menu-Name',
+    audience:'.MuiChip-label',
+  },
+  menuCycleSetting: {
+    menuCycle: '#DN_availability-selector-control',
+    selectemenuCycle: '[id^=DN_availability-selector-option]',
+    repeatCycle: 'input[name="menuCycleRepeat"]',
+  },
+  menuMealsSettings: {
+    fristMeal: '#DN_meal-0-selector-control',
+    selectFristMeal: '[id^=DN_meal-0-selector-option]',
+    secondMeal: '#DN_meal-1-selector-control',
+    selectSecondMeal: '[id^=DN_meal-1-selector-option]',
+    thirdMeal: '#DN_meal-2-selector-control',
+    selectThridMeal: '[id^=DN_meal-2-selector-option]',
+  },
+};

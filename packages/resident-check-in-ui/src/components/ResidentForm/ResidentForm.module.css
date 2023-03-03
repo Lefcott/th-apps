@@ -1,0 +1,49 @@
+.resForm--buttonsContainer {
+  background-color: #fff;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.resForm--buttonsContainer Button {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.resForm__label {
+  font-weight: bold;
+  color: #474848
+}
+
+.resForm__labelIcon {
+    width: 16px;
+    margin-left: 7px;
+}
+
+.resForm__clearSelector {
+  color: #4c43db;
+  font-size: 13px;
+  text-align: left;
+  margin-left: 10px; 
+  cursor: pointer;
+}
+
+.resForm__wrapper {
+  padding: 20px;
+  flex: .1 1 auto;
+  overflow: auto;
+}
+
+.resForm__form {
+  width: 100%;
+  padding: 15px !important;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+  .resForm--buttonsContainer Button {
+    margin-left: 5px;
+  }
+}

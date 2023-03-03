@@ -1,0 +1,28 @@
+<div class="modal-header">
+  <h3 class="modal-title" id="modal-title">Confirm</h3>
+  <div
+    class="modal-close"
+    id="creator_deletePageCancel-button"
+    ng-click="$ctrl.cancel()"
+  >
+    <i class="fas fa-times"></i>
+  </div>
+</div>
+<div class="modal-body delete-body" id="creator_deletePageConfirm-button">
+  <h5>{{$ctrl.message}}</h5>
+</div>
+<div class="pageProperties__container--button">
+  
+  <button
+    class="btn btn-warning button__delete button_group"
+    ng-click="$ctrl.cancel()"
+  >
+    <span>Cancel</span>
+  </button>
+  <button
+    class="btn button_group"
+    ng-click="$ctrl.confirm()"
+  >
+    <span>Confirm</span>
+  </button>
+</div>

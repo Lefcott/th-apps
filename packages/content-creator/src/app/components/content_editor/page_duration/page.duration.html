@@ -1,0 +1,12 @@
+<div class="pageDuration">
+    <form class="form-horizontal" class="pageDuration__duration" name="pageDuration">
+    
+    <label class="pageDuration__label-duration">Duration</label>
+      <div>
+        <input class="pageDuration__input" type="number" name="duration" ng-change="$ctrl.changeDuration()" ng-model="duration"
+          ngMin="1" ng-maxlength="3" placeholder="15"></input>
+        <label class="pageDuration__label">seconds</label>
+      </div>
+    </form>
+
+</div>

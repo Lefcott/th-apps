@@ -1,0 +1,170 @@
+.resCard__row {
+  padding: 30px 10px 40px !important;
+  flex-shrink: 0;
+}
+
+.resCard__imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.resCard__img {
+  font-size: 45px !important;
+  width: 90px !important;
+  height: 90px !important;
+}
+
+.resCard__name {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.resCard__info {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.resCard__alertContainer {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.resCard__alertIcon {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 2px 5px;
+}
+
+.resCard__awayIcon{
+    height: 16px;
+    width:auto;
+    margin: -2px 10px 2px 10px;
+}
+
+.resCard__dropdown {
+    width: 100%;
+}
+
+.resCard__dropdown__button {
+    left: 0;
+    margin: auto;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    top: -22px;
+    width: 85%;
+}
+
+.resCard__dropdown__menu {
+    width: 85%;
+}
+
+.resCard__dropdown img {
+    float: left;
+    margin-right: 10px;
+    width: 25px;
+}
+
+.resCard__alert {
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 0;
+    margin: auto;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    top: -22px;
+    width: 85%;
+    color: #474848;
+    background-color: #fff;
+    border-color: rgb(204, 204, 204);
+}
+
+.resCard__alertIcon {
+    height: 20px;
+    margin: 0 10px 2px 5px;
+    width: 20px;
+}
+
+.resCard__alertList {
+  padding: 20px;
+  overflow: auto;
+  height: 100%;
+}
+
+.resCard__alertDate {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.resCard__formWrapper {
+  position: relative;
+  display: flex;
+  flex: .1 1 auto;
+  overflow: visible;
+  flex-flow: column;
+}
+
+.resCard__imgWrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  bottom:0
+
+}
+
+.resCard__imgWrapper img {
+  width: 100%;
+}
+
+/* *************************
+**** Status Colors
+************************* */
+
+.resCard__row.alertAct {
+    background-image: linear-gradient(132deg, #e52d2d, #a20202);
+}
+.resCard__row.issue {
+    background-image: linear-gradient(133deg, #f0ad4e, #ee9800);
+}
+.resCard__row.none {
+    background-image: linear-gradient(133deg, #6ca92a, #365515);
+}
+.resCard__row.noSystem {
+    background-image: linear-gradient(133deg, #6E6F70, #474848);
+}
+.resCard__row.optOut {
+  background-image: linear-gradient(133deg, #515757, #474848);
+}
+
+/* hide caret on bootstrap button dropdown & menu for success */
+.btn-success.dropdown-toggle::after, .btn-success.dropdown-toggle + div {
+    display:none;
+}
+
+.browser-link, .browser-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* *************************
+**** Media queries
+************************* */
+@media (max-width: 960px) {
+  .resCard__row {
+    border-radius: 0px 0px 5px 5px;
+  }
+  .resCard__name {
+    font-size: 20px;
+  }
+  .resCard__info {
+    font-size: 11px;
+  }
+
+  .resCard__alertList {
+    flex: 1
+  }
+}

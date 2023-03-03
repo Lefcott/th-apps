@@ -1,0 +1,32 @@
+<div class="ct-modal-body fill">
+  <div class="ct-modal-header">
+    new layout
+    <button type="button" ng-click="$ctrl.handleClose()" class="ct-modal-close">
+      <img src="/assets/icons/close-x.svg" />
+    </button>
+  </div>
+  <div class="ct-modal-content-container fill">
+    <div class="ct-modal-content">
+      <h4>
+        all content from current slide will be lost when selecting a new layout.
+      </h4>
+      <h4>do you want to continue?</h4>
+    </div>
+    <div class="ct-modal-submitContainer">
+      <button
+        class="btn ct-modal__buttons"
+        type="button"
+        ng-click="$ctrl.handleDismiss()"
+      >
+        continue
+      </button>
+      <button
+        class="btn ct-modal__buttons"
+        type="button"
+        ng-click="$ctrl.handleClose()"
+      >
+        cancel
+      </button>
+    </div>
+  </div>
+</div>

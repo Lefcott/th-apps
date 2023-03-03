@@ -1,0 +1,5 @@
+<div class="line shape">
+    <svg id="svg-line" height="100%" width="100%">
+        <line x1="0" y1="2" x2="200" y2="2" stroke="black" stroke-width="10"></line>
+    </svg>
+</div>

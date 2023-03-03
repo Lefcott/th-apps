@@ -1,0 +1,25 @@
+<!-- @format -->
+
+<div class="mt-3">
+	<div
+		ng-if="
+			$ctrl.contentEditorService.isMenuDaily ||
+			$ctrl.contentEditorService.isMenuDailySpecial
+		"
+	>
+		<label class="checkmark__container container">
+			<span class="checkbox__label menu-property-label"
+				>Descriptions
+				<p class="mt-1 cc-caption">Show or hide descriptions, if they exist</p>
+			</span>
+			<input
+				ng-model="value"
+				ng-click="$ctrl.onToggle('includeDescriptions')"
+				class="checkbox"
+				type="checkbox"
+				ng-checked="$ctrl.isToggled('includeDescriptions')"
+			/>
+			<span class="checkmark"></span>
+		</label>
+	</div>
+</div>
